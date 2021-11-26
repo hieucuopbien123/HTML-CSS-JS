@@ -1,0 +1,136 @@
+﻿Phím tắt VSC:
+SHIFT+ALT+F/CTRL+F  F1->search
+CTRL+SHIFT+X->extension   ALT+SHIFT+A
+CTRL+SHIFT+E->editor
+ALT+L+ALT+O	CTRL+SHIFT+F
+CTRL+, ->mở setting
+CTRL+ENTER CTRL+SHIFT+ENTER
+
+
+http://127.0.0.1:<port> là đg dẫn truy cập port máy tinh, nó sử dụng mạng loopback dùng trên chính thiết bị đó với cùng đ đầu và cuối dùng 127.0.0.1 or Localhost đều đc
+view source page/CTRL+U
+
+văn bản file bth lưu là .htm cx mở đc bằng web nhưng nó chỉ là văn bản thô, k có các chức năng xuống dòng,... nên dùng các thẻ HTML vô thì nó sẽ thành siêu văn bản(hypertext)
+
+file .htm<.html
+
+// chỉ đúng vs js, còn html thì là <!-- -->
+
+.json là file JavaScript Object Notation là file ban đầu dùng phục vụ các ứng dụng viết bằng javascript(file .js) nhưng do tính ứng dụng cao nên ngày càng dùng cho nhiều ngôn ngữ khác. Thao tác với cặp key value. Ta dùng nó cho việc setup các thứ, lưu thông tin ứng dụng,..
+
+Thử dùng file json để chỉnh sửa setting của liveserver: CTRL+, -> tìm liveServer-> sẽ có các setting mà ta có thể edit trong settings.json, nó sẽ tạo ra file cho ta và chỉ cần chỉnh sửa, ví dụ chỉnh port khi nhiều file phải mở trên cổng khác nhau. Chuyển workspace của liveserver vào thư mục hiện tại
+
+Ngày xưa, muốn có 1 icon ta phải cắt từ file psd. Bh muốn dùng các icon thông dụng trong css ta có thể dùng các thư viện có sẵn, trong đó phổ biến nhất là font awesome-> tải về và thêm 2 file all.min.js và all.min.css vào file html->dùng icon dạng code
+
+bootstrap là 1 framework có html, css, javascript. Đã là frame work thì sẽ có tập hợp các thứ có sẵn làm cho vc code trở nên đơn giản. Có 2 cách dùng bootstrap. 1 là tải về để link vào khi đó ta link tới 2 file bootstrap.min.js và bootstrap.min.css. 2 là nhúng bootstrap cdn.
+cdn(Content Delivery Network) giúp phát triển nội dung, website và đưa tới khách hàng ở 1 khoảng cách xa 1 cách nhanh nhất với cơ chế tìm và truy cập máy chủ lưu trữ nó ở gần đó nhất. 
+=>cdn thường áp dụng với các website lớn phân phối người dùng ở nhiều nơi khác nhau, nếu k có sẽ truy cập lag và lâu.
+Tương tự, bootstrap cdn là ta link trực tiếp vào trang web và sử dụng. Ví dụ ta cần dùng 1 dòng lệnh trong bootstrap thì khi load nó sẽ truy cập vào máy chủ bootstrap ở gần đó nhất và load đống dữ liệu đó cho ta. Ta cần link tới các trang web chứa 4 file: jquery.min.js, bootstrap.min.css, bootstrap.min.js và popper.min.js=> 4 thư viện đã đc nén
+Ở phiên bản mới thì boostrap 5 đã k có jQuery file nx.
+=>khi tải về ta chỉ cần link 2 file bootstrap.min.js và bootstrap.min.css, tuy nhiên bị mất 1 số tính năng ví dụ data-toggle=> để dùng đc thì vẫn cần jquery nên vẫn script vào, nhưng nếu muôn dùng offline thì có thể copy nội dung file đó ra và nhét vào thư mục link đến đó để dùng-> thẻ script sẽ bỏ trường integrity và crossorigin vì cái đó chỉ dùng khi link từ web.
+Tương tự với cả file popper.min.js
+=>buộc để ít nhất là cùng cấp file html k đc để ở một thư mục khác r link đến
+
+Tương tự, ta có thể thêm các font chữ cho web mà các font lạ máy ta k hỗ trợ bằng cách tải trên mạng về file .ttf của font đó. Để dùng có thể link tới file .ttf font đó tương tự
+
+Khi dùng bootstrap có một vấn đề là nó sẽ tự chỉnh lại các thuộc tính của các thẻ có sẵn theo 1 quy chuẩn của bootstrap trong file _reboot.scss => điều này có thể gây lỗi ví dụ nó làm lại thẻ body có background màu trắng=> nếu ta dùng css đổi background-color của body mà k có dấu chấm thì sẽ k hiện màu theo ý ta vì nó lấy body ở file reboot hơn. Do đó, ta phải hoặc override nó bằng dấu chấm trong file css, hoặc dùng !important or tìm file reboot.scss đó và đổi trực tiếp
+
+Tất cả các trình duyệt hiện đại đều hỗ trợ javascript và ta có quyền tắt bật nó tùy ý. Tắt javascript thì chỉ còn html/css nên các tính năng âm thanh, quảng cáo,.. trong trang web sẽ bị vô hiệu hóa, từ đó vô hiệu hóa quảng cáo dẫn tới link có mã độc hay cản trở trang web lấy thông tin của người dùng. Tuy nhiên các lỗ hổng của javascript thường đc vá rất nhanh nên bị người ngoài tấn công qua javascript ít khi xảy ra. Để tắt javascript trong Microsoft Edge: 3 chấm-> setting->site permission->javascript-> ấn tắt
+Javascript k có tính năng đọc ghi file(vì bảo mật) và xử lý đa luông.
+
+DOM sử dụng trong javascript để thay đổi mọi thứ trong trang web. Giống với ta thao tác trong qt. Nó phân cấp trang html theo cây thư mục thẻ html->head/body->... lo 4 thứ element, property, method, event. DOM có nhiều loại trong javascript: DOM HTML, DOM Event, DOM CSS,.. 
+DOM có nhiều phiên bản: Legacy Dom(cũ, hỗ trợ mọi trình duyệt, bị hạn chế), W3C DOM(trình duyệt hiện đại), IE4 DOM.
+
+HTML giúp hiển thị siêu văn bản. Javascript là 1 ngôn ngữ frontend phía client, nhưng nhờ famework NodeJS nên h nó dùng cả cho backend hay javascript bh là ngôn ngữ fullstack. Các hiệu ứng trong các trang web như lướt qua lại, transition là của javascript đó. Nó giúp giảm tải cho server rất nhiều. Ví dụ: ta muốn hiện 1 thông báo thì có thể dùng javascript hàm alert("") nhưng nếu k dùng javascript thì vẫn làm đc bằng cách dùng ngôn ngữ khác phía server backend như PHP, ASP,.. để tạo hộp thoại vẫn đc 
+
+switch(){
+case a:
+case b:
+   <do sth>
+    break;//cả case a và b đều làm 1 thứ
+}
+
+BOM(Browser Object Model) trong javascript: nó là thứ cho phép ta thao tác với browser như xem lịch sử lướt web. Mấy cái cookies, history, window, screen, navigator,.. là BOM đó.
+Ví dụ: window.document là chuẩn nhưng ta có thể gọi tắt là document cx ok
+
+ECMAScript hay ES6 là đề xuất tiêu chuẩn cho các ngôn ngữ javascript vì mỗi trình duyệt có cách chạy javascript khác nhau nên cần 1 quy tắc chung để trang web có thể chạy tốt trên mọi trình duyệt. Như v ES6 cx chỉ là các quy tắc mới, tính năng mới của javascript mà thôi.
+
+<noscript> </noscript> là thẻ sẽ hiển thị khi trình duyệt tắt javascript or k hỗ trợ 
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/5.4.0/Rx.js"></script> là thư viện RxJS hỗ trợ xử lý bất đồng bộ của js
+
+Có nhiều loại trình duyệt tùy theo nền tảng hệ điều hành khác nhau. VD trong android có Android Browser, iPhone, La bàn, Opera, UC Browser,.. còn trên desktop có Chrome, IE, Firefox, Safari, Cốc Cốc(của VN),..
+
+Trình duyệt cx chỉ có chức năng hiển thị tài nguyên web sử dụng, ta query tài nguyên đó từ server thông qua url. 
+
+Bao gồm giao diện người dùng(các thứ hiển thị trên màn hình)-> browser engine phân phối công việc giao diện và render engine-> render engine chịu trách nhiệm hiển thị nội dung yêu cầu ra, phân giải html/css ra-> Networking xử lý http request-> bộ thông dịch js chạy code js-> lưu trữ dữ liệu như storage, cookies
+
+Các trình duyệt khác nhau sử dụng rendering engine khác nhau như: Webkit dùng cho Safari, Gecko dùng trong firefox, blink dùng trong chrome, opera,..
+V tại sao lại cần dùng đến các engine khác nhau, bởi vì mỗi thứ có 1 điểm lợi khác nhau, vd 1 cái giải quyết cái gì k tốt thì họ có thể tạo ra 1 engine mới tốt hơn chẳng hạn. Tuy nhiên cho đến h, khả năng xuất hiện 1 engine mới là cực thấp trừ khi có 1 bước tiến mới đáng kể. 
+
+Chromium là 1 trình duyệt mã nguồn mở. Các trình duyệt như chromium cũng sử dụng mã nguồn của chromium để tạo nên đó tuy nhiên nhiều người biết đến chrome chứ k bt đến chromium, chromium bị hạn chế hơn so với chrome. Nên dùng Chromium nếu sử dụng hđh mã nguồn mở. Tức là người ta dùng mã nguồn mở của Chromium để phát triển nên các trình duyệt khác.
+
+VSC hỗ trợ emmet 2.0 tự có trong VSC r k cần tải nx. Đó là lý do gõ ! là ra sẵn trang trống r, đó là code emmet do VSC có sẵn
+emmet là công cụ tạo code html và css ngắn gọn, gõ html tốc độ cao
+vc ta gõ 1 phần chữ tự hiện ra gợi ý đó cũng là code emmet
+
+Có nhiều trang web cho hosting miễn phí, vd 000webhost-> vào đăng ký tk free-> tải file lên-> đổi tên file html cần hiển thị đầu tiên là index.js là xong. Dùng free sẽ bị hạn chế chỉ được quản lý 2 website 1 lúc, lượng file size bị giới hạn, tên miền sẽ có thêm 000webhostapp.com
+VD trang web của ta: https://magicnumberfortest.000webhostapp.com/
+
+
+DevTool của Browser:
+devtool là công cụ tích hợp sẵn có hầu hết trên mọi trình duyệt hiện đại => CTRL+SHIFT+I / F12 / RightClick+Inspect
+CTRL+SHIFT+C => mở tab Element 
+CTRL+SHIFT+J => mở tab console
+
+Tab Element: HTML, CSS, animation, DOM,..
+Tab Console: Javascript
+Tab Source: xem tất cả các file dùng để tạo trang web và thao tác với chúng
+Tab Network: các dữ liệu đi và về
+Tab Security: chứng chỉ HTTPS và rạng thái thái TLS của trang web
+Tab Lighthouse: báo cáo chức năng và cấu trúc của trang web để developer có thể cải thiện hiệu suất, tối ưu seo=> chọn thiết bị + generate report
+
+Giúp crawl, chỉnh css, tạo responsive app với device mode, xoay ngang màn hình device..
+
+
+Extension của Browser: 
+Để thêm extension vào browser: 
+- Chrome-> More Tools-> Extension-> bật developer mode-> load unpacked-> trỏ đến folder chứa cái extension(chứa file manifest) vừa rồi => Có thể tùy ý tắt or xóa, thêm extension vào chrome trên thanh công cụ
+- Edge-> 3 chấm-> Extension-> bật developer mode-> load unpacked-> trỏ đến folder chứa cái extension.
+
+Có rất nhiều extension có sẵn trên store có thể tải về dùng, VD: Google Translate
+
+Viết 1 extension cơ bản bằng javascript: 
+1 extension cho browser chỉ cần tối thiểu 1 file manifest.json cung cấp thông tin mà thôi: tối thiểu name, description, version, manifest_version
+=> Tuy nhiên như v thì extension này chưa làm gì cả, ta cần thêm các script cho nó thực hiện chức năng:
+Content script: là những đoạn mã sẽ chạy trên trang web đang xem -> dùng với "content_scripts"+"js"
+Background script: thực hiện ngầm extension, nhận message từ content script or extension khác => dùng bằng "background"+"scripts"
+UI Elements: thành phần giao diện người dùng thg là hộp thoại popup hiện ra khi ấn vào icon của extension => vd dùng với "browser_action"+"default_popup"
+
+persistent xđ trang background đc chạy như thế nào
+dùng "scripts":[".js"] or "page":".html" vói file html chỉ có 1 thẻ script thêm code js vào
+default_popup dùng để hiển thị file html khi mở extension
+js là danh sách các file js được inject vào trang web nên file js luôn trong 1 mảng còn html là ""
+matches xác định trang web muốn thêm nội dung vào=> dùng regexp: "*://*/*" sẽ dùng với mọi trang web(tức trang web nào cx có conten-script này)
+
+background script bắt đầu thực hiện khi ta ấn vào biểu tượng extension, content script tự thực hiện khi ta load 1 trang web mới
+
+
+
+
+Các Tool đã cài:
+auto close tag
+auto rename tag
+beautify
+bracket pair colorize
+color highlight
+color info
+css peek
+Indent Rainbow
+live server
+quokka.js
+vscode-icons
+
+github pull request and issue
+gitLens gitsupercharged->hoc ve github moi dung
+snippet(học React r tải,có nh loại cho từng ngôn ngữ)

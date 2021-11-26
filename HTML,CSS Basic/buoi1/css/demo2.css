@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* * là chọn tất cả item->tạo giá trị mặc định kể cả các item ta tạo trong file html. Trừ các item dùng style trực
+tiếp hoặc các item reimplement lại các thẻ có sẵn trong html sẽ k ảnh hưởng*/
+
+.body {
+    background-color: rgb(236, 40, 40);
+}
+
+.background {
+    background-color: white;
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 200px;
+}
+
+/* gộp cái khung với background vì muốn tạo 1 cái khung div to để viet vào cần 2 yếu tố đó là: căn cái khung ra 
+giữa và chứa flex để chỉnh các phần tử bên trong
+để căn khung ra giữa do chỉ có 1 phần tử nên ta dùng margin 0 auto đi kèm với width vừa chỉnh đc kích cỡ vừa chỉnh ra 
+giữa, ko phải text nên ko dùng textalign */
+/* flex gộp nhau thì chỉ cần display flex và flex direction( th cần dọc) mà thôi
+còn nếu căn giữa thì thêm align items center, thuộc tính khác thì thêm justify content, width fit content */
+
+/* .khung{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 200px;
+} */
+
+.top1 {
+    padding-top: 50px;
+    color: gray;
+}
+
+.top2 {
+    text-align: center;
+    width: 50%;
+    padding-top: 20px;
+    font-size: 19px;
+}
+
+.top3 {
+    text-align: center;
+    padding: 30px;
+}
+
+.top4 {
+    font-weight: bold;
+    text-align: center;
+    font-size: larger;
+    width: 60%;
+}
+
+.commontext1 {
+    width: 62%;
+    padding-top: 30px;
+    font-size: larger;
+    text-align: justify;
+    /* cách này sẽ khiến dòng chữ có hcn đẹp hơn */
+}
+
+/* cần tạo hơi lỗi ở đây để như vb thật nên ko có textalign */
+
+.img {
+    width: 80%;
+
+    /* display: block; margin-left: auto; margin-right: auto;*/
+    /* margin-top: 40px; */
+    /* display: block; có vai trò biến cái thẻ thành thẻ block, bắt đầu 1 dòng mới và chiếm hết width */
+    /* inline-block làm thẻ block nhưng lại là inline-level, thẻ đó như thẻ span ấy nhưng width và
+    height ta chỉnh thoải mái chứ bình thường span là width luôn fix với vật */
+    /* align-items: center; sẽ nhét các item ra giữa theo 1 trục ngang or dọc, thế nếu có nhiều item
+    dài quá màn hình=>nó sẽ phân ra thành nhiều trục đối xứng và sắp xếp theo các trục đó */
+    /* khác với align-content: center; nó sắp xếp 2 bên của trục */
+    /* flex-wrap là cố nhét khít 1 dòng hay k */
+    /* align-content: stretch; là để phần thừa ở cuối */
+    /* justify content là sắp xếp các div con trong 1 cái div lớn theo chiều của flex, align-content và 
+    align-items là sắp xếp theo chiều ngược lại(text-align cx v) */
+}
+
+.tenanh {
+    text-align: center;
+    padding: 5px;
+}
+
+.topmid {
+    padding-top: 40px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    width: 40%;
+}
+
+.cauhoi {
+    padding-top: 20px;
+    font-size: larger;
+    font-weight: bold;
+    font-style: italic;
+    width: 62%;
+}
+
+.commontext2 {
+    width: 62%;
+    padding-top: 20px;
+    font-size: larger;
+}
+
+.commontext3 {
+    padding-top: 20px;
+}
+
+.bailienquan {
+    display: flex;
+    width: 45%;
+    flex-direction: row;
+}

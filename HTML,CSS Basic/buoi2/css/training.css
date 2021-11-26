@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: Test;
+    src: url(../font/Raleway-ExtraLightItalic.ttf);
+}
+
+.testFont{
+    margin: 10px;
+    font-family: Test;
+}
+
+body{
+    background-color: rgb(236, 241, 240);
+    padding-top: 70px;
+}
+
+@media (max-width: 437px) {
+    body { padding-top: 150px; }
+}
+
+@media (max-width: 1000px) {
+    .body{
+        background-color: rgb(238, 214, 214);
+    }
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="../JS/module2.js" defer></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/5.4.0/Rx.js"></script>
+</head>
+<body>
+    <button onclick="event1();">Alert</button>
+    <button onclick="event2(event);">Prompt</button>
+
+    <embed src="../file/background.jpg" type="image/jpg">
+    <img src="../file/background.jpg" alt="error Test">
+    <img src="../file/backgroundaa.jpg" alt="error Test" onerror="this.src='../file/background.jpg'">
+    <!-- kiểu k tìm đc ảnh thì set lại link ảnh -->
+    <iframe src="#" frameborder="0"></iframe>
+    <button onclick="test()">Try it</button>
+    <form action="">
+        <input type="text" name="Name" value="text">
+        <input type="button" onclick="submitFunc();" value="submit" id="inputButton">
+    </form>
+
+    <!-- <script type="text/javascript" src="../JS/training1.js"></script> -->
+    
+    <div id="check" name="hieu" class="test">ABCXYZ</div>
+    <button onclick="window.location.reload();">Refresh</button><!-- là nút F5 đó-->
+
+    <button onclick="reload();">Reload</button>
+    <button onclick="set();">set</button>
+    <script>
+        function reload(){
+            window.location.reload();
+        }
+        function set() {
+            window.location.href = "https://www.facebook.com";
+        }
+    </script>
+
+    <ul id="list"></ul>
+    <div style="border: 1px; background-color: red; height: 250px; width: 500px;" 
+    onmouseover="eventMouseOver(event)" id="div"></div>
+    <script type="text/javascript" src="../JS/training2.js"></script>
+
+    <a href="javascript: void(0);">Useless link</a>
+    <a href="javascript: void alert('Alert!!');">Alert</a>
+    <!-- khi dùng js trong href nó nhận như 1 đg link,ta phải thêm javascript: đằng trc như v để báo hiệu code js -->
+
+    <script>
+        var observer = new Rx.Observable(o => {
+            var width = window.innerWidth;
+            var height = window.innerHeight
+            o.next({
+                width,
+                height
+            })
+        })
+        observer.subscribe(value => consle.log(value.width, value.height));
+    </script>
+
+    <script>
+        var user = {
+            name: "Hieu",
+            age: 18,
+            get name() {
+                return name;//chú ý éo có this như function nhé.
+            },
+            set name_age(value){
+                [name, age] = value.split(" ");
+            }
+        }
+        user.name_age = "Trang 21";
+        console.log("User: ", user.name, user.age);
+        Object.defineProperty(user, 'job', {
+            value: 'IT',
+            writable: true,
+            configurable: true
+        })
+        var description = Object.getOwnPropertyDescriptors(user);
+        //chú ý getOwnPropertyDescriptors(object) khác getOwnPropertyDescriptor(object,attribute)
+        console.log("Before editting job: ", description.job.writable);
+        Object.defineProperties(user, {
+            name: {
+                value: 'John',
+                writable: true
+            },
+            job: {
+                writable: false
+            }
+        });
+        description = Object.getOwnPropertyDescriptors(user);
+        //chú ý muốn xem sự thay đổi phải cập nhật biến nhé
+        console.log("After editting job: ", description.job.writable);
+        console.log("Enumerable: ", description.job.enumerable);
+        var clonePerfectOfUser = Object.defineProperties({}, Object.getOwnPropertyDescriptors(user));
+        console.log(clonePerfectOfUser);
+    </script>
+
+    <script>
+        Promise.all([1,2,3,4]).then(value => console.log("data: ", value))//value là mảng 4 ptu
+            .then(value => console.log("data: ", value))//value là undefined vì k có đối số 2
+            .catch(error => console.log("error: ", error))//error
+        var testString = "hello world";
+        var testStringToArr = [...testString];//thích chuyển từ string sang arr đều đc
+        console.log(testStringToArr)
+        console.log(9007199254740991n * 10n);
+    </script>
+</body>
+</html>

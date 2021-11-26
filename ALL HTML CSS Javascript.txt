@@ -1,0 +1,510 @@
+HTML Element: 
+<!DOCTYPE html>
+<html lang="vi(en)">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Học HTML cơ bản">
+<meta name="author" content="">
+<meta name="keyword" content="html co ban">
+<meta name="generator" content="VSC">
+<meta name="application-name" content="Chrome">
+<meta http-equiv="refresh" content="1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title></title>
+<body>
+</body>
+</html>
+
+<div style="color: ;font-weight: ;"> </div>
+<h1> </h1>
+<h2> </h2>
+<h3> </h3>
+<h4> </h4>
+<h5> </h5>
+<h6> </h6>
+<em></em>
+<u></u>
+<strike></strike>
+<mark></mark>
+<wbr>
+<code></code>
+
+<q></q>
+<cite></cite>
+<blockquote cite=""></blockquote>
+<abbr title=""></abbr>
+<address></address>
+<bdo dir="rtl(ltr)"></bdo>
+<dfn></dfn>
+<del> </del><ins> </ins>
+<small></small>
+<big></big>
+
+<p>
+<span> </span>
+</p>
+
+<ol type="1(A/ a/ I/ i)" reversed="reversed" start="<số>">
+<li></li>
+</ol>
+
+<ul>
+<li> </li>
+</ul>
+
+<table cellspacing="" cellpadding="" border="">
+<colgroup>
+<col span="">
+<col span="">
+</colgroup>
+<thread>
+<tr>
+<th> </th>
+<td align="right(left/ center)"> </td>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+
+<dl>
+<dt></dt>
+<dd></dd>
+</dl>
+
+<form action="#<link tới web>" method="get(post)">
+<label for="html(css/ javascript)" form=""></label>
+<input type="text(checkbox/ radio/ number/ search/ email/ search/ submit/ image/ text/ password/ url/ tel/ button/ color/ date/ datetime-local/ file/ hidden/ month/ range/ reset/ submit/ time/ url/ week)" value="" checked disabled formaction="" formmethod="" formnovalidate="" formtarget="" autocomplete autofocus pattern="(* \. ? A-Z) [^] {}" dir="ltr(rtl)" onclick(onmouseover/ onmouseout)="alert(<số>('<cụm ký tự>'))" min="1979-12-31(<số với trường liên quan đến number>)" max="2000-01-02(<số>)" step="" accept="image/*(audio/* video/*)" multiply minlength="" max-length="" size="" readonly required name="" dirname="<tên trường name>.dir" placeholder="">
+
+<input list="">
+<datalist id="">
+<option value="">
+</datalist>
+
+<textarea rows="4" cols="50"><text mặc định></textarea>
+</form>
+<br>
+
+<img src="" alt="" usemap="">
+<map name="">
+<area shape="rect(circle/ poly)" coords="" alt="" href="" download=<tên file> target="">
+</map>
+
+<select name="" id="">
+<optgroup>
+<option value=""> </option>
+</optgroup>
+</select>
+
+<link rel="stylesheet" href="">
+
+<style type="text/css" media="printf(all)">
+<tên thẻ có sẵn 1>, <tên thẻ có sẵn 2> {<thuộc tính chung gán cho các thẻ có sẵn>}
+<tên thẻ có sẵn 1>.<tên 1 kiểu khác của nó> {<tên thuộc tính riêng của kiểu này>}
+#<tên chế ra>{border: 1px solid red;} 
+</style>
+
+<button type="submit(button/ reset)" id="" class="" autofocus> </button>
+
+<video src="" width="" height="" autoplay controls muted loop preload="auto(none/ metadata)">
+<source src="" type="video/mp4"/>
+</video>
+
+<audio controls src="">
+<source src="" type"audio/wav">
+</audio>
+
+<object data="" type="application/pdf(jpg/ png)"></object>
+<iframe src="" frameborder=""></iframe>
+<a href="#(#top)" target="_blank(_self)" download=""> </a>
+<hr/>
+<i></i>
+<strong></strong>
+<b></b>
+<nav></nav>
+<sub></sub>
+<sup></sup>
+<base href="" target="">
+
+<header> </header>
+<main>
+<article>
+<section>
+<p> </p>
+</section>
+<aside> </aside>
+</article>
+</main>
+<footer> </footer>
+
+<pre>
+<script language=""javascript" src=".js" type="text/javascript(module  text/babel)">
+<code java script or link file đều ok>
+</script>
+</pre>
+
+<details>
+<summary> </summary>
+<p> </p>
+</details>
+
+&ensp; &emsp; &nbsp; &#160; &lt; &gt; &thinsp;
+
+
+CSS: 
+. { } 
+# {}
+*{}
+. div{}
+. div:nth-child(last-child)( ){}
+.<tên>:hover >(~/ /+)(*).(#)tên class>{}
+.<tên>:invalid {}
+color: #ccc(gray/ tomato) !important; background-color: ;
+padding: ; padding-top: ;
+margin: auto; margin-top: ;
+width: 1px(1%/ fit-content); height: ; min-height: ; line-height: ;
+border-width: thin(medium/ thick/ 10px); border-color: border-style: solid(none/ dotted/ dashed/ inset/ hidden/ double); border-collapse: collapse(separate); border-right-color: ; border-right: ;
+display: flex(inline-flex/inline-block/none); border-radius: ;
+flex-direction: row(column-reverse); flex-wrap: wrap(nowrap); flex: 0.3, 0.5, 0.2;
+align-content: center(flex-start/ stretch/ space-around/ space-between/ stretch); justify-content: center(flex-start/ stretch/ space-around/ space-between/ space-evenly); align-items: center(flex-end/ flex-start/ stretch/ baseline); text-align: center(right/ justify); vertical-align: baseline(sub/ super/ top/ text-top/ middle/ bottom/ text-bottom/ <số>px(cm/ %)/ initial); 
+font-size: larger(smaller); font-weight: bolder; font-style: italic(normal); font-family: sans-serif(monospace); 
+float: ; clear: initial(both/ right/ left/none);
+overflow: hidden(visible/ scroll/ auto);
+position: relative(absolute/ static/ fixed/ sticky/ initial/ inherit); left: ; top: ;
+list-style: none(url(<link tới file ảnh>)/ square/ circle); list-style-type: georgian(circle/ square);
+transform: rotate(none(90deg/ 0.25turn/ 1.57rad)); 
+text-decoration: underline; text-decoration-line: underline(overline/ line-through);
+cursor: pointer(alias/ all-scroll/ auto/ cell/ context-menu/ col-resize/ copy/ crosshair/ default/ e-resize/ ew-resize/ grab/ grabbing/ help/ move/ n-resize/ ne-resize/ nesw-resize/ ns-resize/ nw-resize/ nwse-resize/ no-drop/ none/ not-allowed/ progress/ row-resize/ s-resize/ se-resize/ sw-resize/ text/ url(<link file ảnh cursor>.cur)/ w-resize/ wait/ zoom-in/ zoom-out);
+background-image: url(<link tới ảnh>); background-size: contain(cover/ <số>%/ <số>px x <số>px/ <số>px); background-repeat: repeat(no-repeat/ repeat-x/ repeat-y); background: linear-gradient(<số>deg, orange 60%, cyan);
+box-shadow: <số chỉ vị trí Ox> <vị trí Oy> <px chỉ độ mờ ở góc> <px chỉ độ nhòe ra xung quanh> <màu> <mode>;
+animation-name: ; animation-duration: <số>s(ms); animation-timing-function: linear(ease/ ease-in/ ease-out/ ease-in-out/ step-start/ step-end/ steps(int, start(end)); animation-iteration-count: <số>(infinite/ initial/ inherit); animation: <tên> <time> <iteration-count>; 
+whiteSpace: pre-wrap(normal/ nowrap);
+aria-label: "<text>";
+z-index: <số>
+
+@keyframes <animation-name>
+{
+from { }
+to { }
+50% { }
+}
+@media(:)
+{
+}
+@font-face {
+  font-family: <tên font>;
+  src: url(<link tới file>);
+}
+
+
+Bootstrap:
+class="container-sm/ container-fluid p(m)y(t/b/l/r/x)-0(1/2/3/4/5/auto)"
+class="row border bg-primary(bg-dark/ bg-transparent/ bg-body/ bg-warning/ bg-info) text-white"
+class="col-xs(sm/ md/ lg)-<số> mw(mh/ w/ h)-số"
+
+class="navbar(navbar-default) nav justify-content-start(end/ center) flex-lg-column(row) nav-tabs(pills) navbar-expand-xl(lg/ md/ sm) nav-light(dark)"
+class="navbar-header"
+class="navbar-brand"
+class="navbar-toggler"
+class="navbar-toggler-icon"
+class="collapse navbar-collapse"
+class="navbar-nav"
+class="nav-item dropdown"
+class="dropdown-toggle dropdown-toggle-split"
+class="dropdown-menu-right dropdown-menu"
+class="dropdown-item"
+class="dropdown-divider"
+class="caret"
+class="nav-link disabled avtive"
+
+class="tab-content"
+class="tab-pane"
+
+data-toggle="tab(collapse)"
+data-target=""
+class="collapse(dropdown)"
+
+class="form-inline"
+class="form-group"
+class="form-control"
+
+class="btn-group"
+class="btn btn-outline-success btn-danger(success/ secondary/ primary)"
+
+class="fixed-top(bottom)"
+
+class="d-flex(d-inline-flex)"
+
+
+Javascript: operator/vòng lặp = C++
+===  !===
+
+var <tên var> = ; let/const <biến 1>, <biến 2> = ;
+
+alert(confirm/ console.log(error/ warn/ info)/ prompt)(<số>("") + '');
+
+if(<biến> == <giá trị>) {} else {}
+<>?<>:<>
+switch(true) {
+case: continue;
+default: break;
+}
+
+parseInt(<var>('<số>', <hệ>/ " ")); parseFloat(" ");
+
+function <tên hàm> (<tên var>, ...<tên var>){
+ console.log(arguments);
+}
+
+function <tên kiểu>(){	//constructor
+ with(this){ }
+}
+
+try{
+ throw new TypeError(Error/ EvalError/ RangeError/ ReferenceError/ SyntaxError/ URLError)(<chuỗi>,<link file>,<sô>)
+}catch(e){
+ if(e instance TypeError);
+ e.message(.name/ .stack)
+}finally{
+}
+
+new Number();
+Number.NaN(.MIN_VALUE/ .NEGATIVE_INFINITY/ .MAX_SAFE_INTEGER); Infinity;
+isNaN(<biến>); 
+<biến>.prototype.<tên attribute>; <biến>.prototype.<tên method> = function ( ){ };
+<biến>.constructor;
+<biến>.toExponential(<số>)(.toFixed(<số>)/ .toPrecision(<số>)/ .toString(<số>)/ .toLocaleString()/ .valueOf());
+
+new Boolean();
+<biến>.toString();
+
+new String();
+<biến>.length
+<biến>.charAt(<số>)(.charCodeAt(2)/ .indexOf(<chuỗi>,<số>));
+<biến>.concat(+)(<chuỗi>)(.localeCompare(<chuỗi>)/ .match(<regexp>)/ .replace(<regexp>,<function/kiểu mẫu/subtr>));
+<biến>.slice(<số>,<số>)(.split(<chuỗi>,<số>)/ .substr(<số>,<sô>)/ .substring(<số>,<số>)/ .search(<regexp>))
+<biến>.toUpperCase()(.toLocaleUpperCase());
+<biến>.big()(.link()/ .bold()/ .italics()/ .strike()/ .small()/ .sub()/ .sup());
+<biến>.padEnd(<số>,"<chuỗi>")(.padStart(<số>,"<chuỗi>"));
+<biến>.matchAll(<regexp>);
+
+new Array(); var <biến> = [];
+<biến>.every(<function>)(.some(<function>)/ .filter(<function(x,index,array)>)/ .reduce(.reduceRight)(<function(total,currentValue,index,arr)>)/ .map(<function>)/ .forEach(<function có param(<item>,<index>,<arr chứa item kia>)>));
+<biến>.reverse()(.sort(<function>));
+<biến>.join(<ký tự>)(.pop()/ .push(<số>)/ .shift()/ .splice(<số>,<số>,<giá trị>)/ .unshift(<giá trị>));
+JSON.stringigy(<biến>); <biến>.toString();
+<biến>.includes(<giá trị>,<kể từ vị trí>);
+<biến>.copyWithin(<bắt đầu dán>,<bắt đầu copy>,<end copy + 1>);
+
+new Date();
+<biến>.getTime()(getFullYear()/ getTimezoneOffset());
+<biến>.toUTCString()(.toDateString()/ .toLocaleDateString()/ .toLocaleFormat()/ .toLocaleString()/ .toLocaleTimeString()/ .toTimeString()/ .toUTCString());
+<biến>.setUTCMilliseconds(<số>); <biến>.UTC(<biến>)(.parse(<biến>))
+
+new Math();
+MATH.PI(.LOG2E/ SQRT1_2);
+Math.random();
+Math.round(biến)(floor(<biến>)/ ceil(<biến>));
+
+new RegExp();
+<biến>.test(<chuỗi>)(exec(<chuỗi>)); <biến>.lastIndex;
+<biến>.source(.global/ .ignoreCase/ .multiline)
+
+window.print();
+
+javascript:void <function>/ void(<function>);
+void(<function>);
+document.<element>.<name>(<id>).<style>.<attribute> = "<giá trị>";
+<tên biến>.<thuộc tính> = <giá trị>
+
+for(<biến> in <object>){ }
+for(var <tên biên> of <tên Iterable>)
+
+<tên label>:
+for(;;)
+break <tên label>;
+
+new Function(<parameter>,<nd hàm>);
+
+document.implementation;
+document.defaultView;
+window.navigator;
+
+window.location.href(.hostname/ .pathname/ .protocol/ .port/ .search/ .hash/ .origin/ .host)
+window.location.assign(<link>); window.location = <link>
+
+window.open(<url>,<name>,"width(height/ top/ left)=<số>; menubar(resizable/ scrollbar/ status/ titlebar/ toolbar/ fullscreen)='yes(no/ 1/ 0)'");
+window.onload = <tên hàm>;
+window.onerror = function (<mess>,<url>,<dòng>) {}
+window.focus()(.reload()/ .replace(<url>));
+this.moveTo(resizeTo)(<số>,<số>);
+
+window.history;
+window.history.back()(.forward()/ .go(<số>));
+
+window.navigator.language(.appCodeName/ appName/ .appVersion/ .platform/ .userAgent/ .product);
+navigator.javaEnabled();
+navigator.mimeTypes[].type(.description);
+
+typeof(Storage);
+window.localStorage(.sessionStorage).setItem(<key>,<value>)(.getItem(<key>)/ .removeItem(<key>)/ .key(<số>)/ .clear());
+
+window.screen.width(.height/ .availWidth/ .avail.Height/ .colorDepth/ .pixelDepth)
+
+new Object(); var <biến> = {
+<tên thuộc tính>:<giá trị>,
+[<tên expression/biến>]:<giá trị>,
+get <function k có para>
+set <function có 1 para(value)>
+<function bất kỳ có return giá trị>,
+};
+delete <biến>.<tên key>
+Object.create({<object>})(.values(<tên object>));
+
+<tên object>?.<key attribute>?.<key attribute>; <tên array>?.[<số>]
+
+class <tên class> extends <tên class> {
+ #<tên biến>;
+ constructor(<param>){
+ super(<>);
+ static <function/var>
+ this.<param> = <param>;
+}
+ get <param>(){ }
+ set <param>( ) { }
+ <khai báo function>
+}
+
+document.title(.lastModified/ .URL/ .charset);
+document.open()(.close());
+
+document.cookie = <chỉ 1 giá trị>;
+document.embeds(.forms/ .images);
+document.plugins[].name(.filename/ .description);
+
+document.write(<biến(giá trị)>,(+)typeof <tên biến> + "${<biến>}"); document.writeln(<convert ra chuỗi>);
+
+document.getElementById("<tên id>")(); document.querySelector("<CSS Slector>"); elementFromPoint(<số>,<số>);
+document.getElementsByName("<tên class>")(.getElementsByTagNam("<tên tag>")/ .getElementsByClassName("<tên class>")/ querySelectorAll("<CSS Selector>"));
+<tên node>.textContent(.innerHTML/ .innerText);
+<tên node>.tagName(.nodeName/ .className);
+<tên node>.parentNode(.firstChild/ .lastChild/ .nextSibling/ .previousSibling); <tên node>.cloneNode(true);
+<tên node>.childNodes
+<tên node/tên document fragment>.appendChild()(.removeChild(<tên node>)/ .insertBefore(<tên node>,<tên node>)/ .replaceChild(<tên node>,<tên node>)); 
+<tên node>.focus();
+
+document.documentElement; document.children[0];
+document.activeElement;
+
+document.createAttribute("<tên attribute>"); 
+<tên biến attribute/tên node>.value(.nodeValue)=""; 
+<tên node>.setAttributeNode(<tên biến attribute>); <tên node>.getAttributeNode(<tên attribute>); <tên node>.removeAttributeNode(<tên attribute>);
+<tên node>.getAttribute(<tên att>)(setAttribute(<tên att>,<giá trị>)/ hasAttribute(<tên att>)/ removeAttribute(<tên att>));
+<tên node>.setAttributeNS(<tên namespace>,<tên att>,<giá trị>)(getAttributeNS(<tên nsp>,<tên att>)/ hasAttributeNS(<tên nsp>,<tên att>)/ removeAttributeNS(<tên nsp>,<tên att>));
+<tên node>.setAttributeNodeNS(<tên att>)(getAttributeNodeNS(<tên nsp>,<tên att>)); 
+<tên node>.addEventListener(.removeEventListener)(<tên attribute bỏ on>,tên hàm);
+
+document.createDocumentFragment();
+document.createElement("<tên thẻ>");
+document.createTextNode(<chuỗi>);
+
+var <tên node iframe> = document.getElementsByTagName("IFRAME")[0];
+<tên node iframe>.contentWindow.document.importNode(<tên node trong iframe>,true)
+
+var <tên node iframe> = document.getElementsByTagName("FORM")[0].submit();
+
+document.readyState;
+document.cookieEnabled;
+
+setTimeout(<function>,<số>); clearTimeout(<biến lưu setTimeout>);
+setInterval(<function>,<số>); clearInterval(<biến lưu setInterval>);
+
+<tên instanceOfMouseEvent>.clientX(.clientY);
+
+"use strict"
+
+eval("<expression>");
+
+export <function/biến>; export {<function/biến>, <function, biến>}; export default <..>
+import {,} from "<link file>.js"; import *(<function/biến>) as <tên biến> from "<link file>.js";
+import("<link to file>").then(<tên data> => {
+ <dùng data chứa mọi thứ đã import>
+})
+
+<tên hàm>.apply(<tên callback object>,[<param>]); <tên hàm>.call(<object>,<param>);
+<hàm>.bind(<object>,<param cách nhau dấu phẩy>);
+
+Object.getOwnPropertyNames(<tên class>(<tên class>.prototype))
+Object.getOwnPropertyDescriptors(<object>).writable(.configurable/ .enumerable/ .value);
+Object.defineProperty(<tên object>,"<attribute của object>",{<tên flag>:<true/false>});
+Object.defineProperty(<tên object>,{
+ <tên attribute1>: {<<tên flag>:<true/false> cách nhau dấu phẩy>},
+ <tên attribute2>: {<<tên flag>:<true/false> cách nhau dấu phẩy>},
+});
+<tên object> = Object.defineProperties({},Object.getOwnPropertyDescriptors(<tên object muốn clone>));
+
+let [<var cách nhau dấu phẩy> = "<giá trị mặc định>"] = <tên arr>
+let { <<attribute of object>:<biến muôn lưu> cách nhau dấu phẩy> } = <tên object>
+let {<attribute>,...<tên attribute>} = {<object có attribute tương tự>};
+
+<tên array> = [...<tên array>, <các giá trị khác cách nhau dấu phẩy>]
+
+new Set([]);
+<tên set>.add(số)(.has(<số>)/ .delete(<số>));
+<tên set>.size;
+<tên set>.clear();
+<tên arr> = [...<tên set>]
+
+new Map([<các array con 2 phần tử cách nhau dấu phẩy>]);
+<tên map>.set(<key>,<value>);
+<tên map>.delete(<tên key>)(.has(<tên key>));
+<tên map>.size;
+<tên map>.keys()(.values()/ .entrices());
+[...<tên map>];
+
+new WeakMap();
+<tên biến>.set(<key>,<value>);
+<tên biến>.get(<key>)(.has(<key>)/ .delete(<key>));
+
+new WeakSet();
+<tên>.add(<tên key>/ .has(<tên key>)/ .delete(<tên key>));
+
+Symbol(<giá trị key>);
+<tên biến boolean> = Boolean(<tên biến symbol>);
+<tên biến string> = String(<tên biến symbol>);
+<tên biến object> = <tên array/map>[Symbol.iterator]().next();
+
+new Promise(<function có 2 para(resolve, reject) {}>);
+<tên biến>.then(<function có 1 para(value)>,<function có 1 para>(reason)).catch(<function có 1 para(message)>);
+Promise.allSettled(.all/ .race)([<các biên promise cách nhau dấu phẩy>]).then(<function>).catch(<function>);
+
+async function <tên function>() {
+ await <tên promise>;
+}
+
+new Rx.Observable((<tên biến observer>) => {
+ <tên biến observer>.next(<tên biến gửi lên Observable>)
+});
+<tên biến Rx.Observable>.subscribe(<function>);
+
+Object.assign(<target>({}),<source>);
+
+function* <tên func*>(){
+ yield 1;
+ yield* [1,2];
+}
+var <biến func*> = <tên func*>();
+<biến func*>.next().value(/.done);
+
+(Event:) 
+<body onoffline(onafterprint/ onbeforeonload/ onbeforeprint/ oncanplay/ onload/ ononline/ onpagehide/ onpageshow/ onresize/ onstorage/ onunload)=""></body>
+<img onabort(onerror)="">
+<input onblur(onclick/ onfocus/ oninput/ oninvalid/ onkeydown/ onkeypress/ onkeyup/ onselect)="">
+<input type="Search" onsearch="">
+<video oncanplaythrough(ondurationchange/ onemptied/ onended/ onloadeddata/ onloadedmetadata/ onloadstart/ onpause/ onplay/ onplaying/ onprogress/ onratechange/ onseeked/ onseeking/ onstalled/ ontimeupdate/ onvolumechange/ onwaiting)="">
+<select onchange="">
+<div ondbclick(onscroll)="">
+<p draggable="true" ondrag(ondragstart/ ondragenter/ ondragleave/ ondragover/ ondragend/ ondrop/ onmousedown/ onmousemove/ onmouseout/ onmouseover/ onmouseenter/ onmouseup/ onmousewheel/ oncopy/ onpaste/ onmouseleave)="">
+<form onsubmit=""></form>
+

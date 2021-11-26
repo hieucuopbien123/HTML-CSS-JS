@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document123</title>
+    <link rel="stylesheet" href="css/demo1.css">
+    <!-- href là hyperlink, rel là relationship -->
+    <style type="text/css">
+        table,
+        th,
+        td {
+            border: 1px solid red;
+            /* có thể gộp với border: chung như trên or tách với border-width: ; border-color:  */
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div style="color:tomato; font-weight: bold;">thẻ div</div>
+    <!-- bao cả không gian -->
+
+    <h1>thẻ h1</h1>
+    <h2>thẻ h2</h2>
+    <h3>thẻ h3</h3>
+    <h4>thẻ h4</h4>
+    <h5>thẻ h5</h5>
+    <h6>thẻ h6</h6>
+    <!-- cỡ chữ -->
+
+    <p>thẻ pdgaadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaagggggggggggggggggggggggggggaaaaaaaaaa
+        aaaaaaaaaaaaaaaaaaagggg
+        ggggggg</p>
+    <!-- văn bản thay dấu enter như cách -->
+
+    <ul>
+        <li>menu 1</li>
+        <li>menu 2</li>
+    </ul>
+    <!-- danh sách -->
+
+    <table>
+        <thead>
+            <tr>
+                <th>th là in đậm và căn chỉnh</th>
+                <td>td là in thường</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>tr là dòng</th>
+                <td>thead là tiêu đề, tbody là nd</td>
+            </tr>
+            <tr>
+                <td>tạo nhiều tr thì nhiều dòng</td>
+                <td>alo 1234</td>
+            </tr>
+        </tbody>
+        <!-- có thể ko dùng thead chỉ dùng tbody -->
+    </table>
+
+    <span>Xin chào mn</span>
+    <p>Xin chào các <span style="color:Tomato;">bạn</span>, 1234</p>
+    <!-- lồng các thẻ inline vào đc -->
+
+    <input type="text">
+    <div><input type="checkbox"> </div>
+    <div> <input type="radio" name>
+        <input type="radio">
+        <!-- đã chọn thì sẽ k thể unchecked nếu chỉ có 1. Muốn chỉ chọn 1 thú trong nh thứ thì phải dùng chung 
+            name với nhau-->
+    </div>
+    <div><input type="number"></div>
+    <!-- lồng div xuống dòng or dùng thể br -->
+
+    <form>
+        <input type="radio" name="gender" value="male" checked> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+        <input type="radio" name="gender" value="other"> Other
+    </form>
+    <!-- form đẩy lên server ko qtr, nó là 1 cụm ví dụ 2 input 1 button submit -->
+    <!-- checked mặc định, value văn bản đi kèm -->
+    <!-- ko nên dùng lệnh br mà dùng div -->
+
+    <img src="imgs/Sketchpad.png" alt="hello">
+    <!-- có thể chèn đường link trên web (lấy link bằng console) -->
+
+    <select name="">
+        <option value="1">HN</option>
+        <option value="2">HP</option>
+    </select>
+    <!-- chọn chữ, value là giá trị nó gửi tới server nếu chon -->
+
+    <button class="text-green text-red">hello1</button>
+    <button class="text-green text-violet">hello2</button>
+    <button class="text-red text-yellow">hello4</button>
+    <button id="text-violet" class="text-red">hello3</button>
+
+</body>
+
+</html>

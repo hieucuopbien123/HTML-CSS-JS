@@ -1,0 +1,23 @@
+.font {
+    font-style: italic;
+    line-height: 2;
+    width: 10%;
+}
+
+.c3cangiua {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: fit-content;
+    height: 500px;
+}
+
+/* chú ý dùng width:fit-content kết hợp với flex thì vô dụng. Lệnh width:fit-content sẽ khiến cho phần content
+của thẻ block bị co lại thành nội dung. Điều này làm flex vô dụng. Vì khi dùng flex thì thẻ cha có content
+chiếm toàn bộ, phần k hiển thị là space sẽ có dấu gạch chéo. Và thực chất ta sắp xếp con trong cha dựa vào
+việc thay đổi cái space đó mà thôi. Đó là width fit content với flex-direction là row chứ column vẫn ok
+Ở trên ta phải set heigth nó dài ra mới thấy hiệu ứng ra giữa của nó */
+
+.body {
+    background-color: burlywood;
+}

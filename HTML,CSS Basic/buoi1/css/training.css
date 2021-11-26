@@ -1,0 +1,30 @@
+.box {
+    border: 1px solid #ccc;
+    min-height: 300px;
+    display: flex;
+}
+
+/* chỉ áp dụng với thành phần div */
+.box div {
+    margin: 5px;
+    text-align: center;
+    background-color: #72C953;
+}
+
+.box div:nth-child(1) {
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+}
+
+.box div:nth-child(2) {
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+}
+
+.box div:nth-child(3) {
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+}

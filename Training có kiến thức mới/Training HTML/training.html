@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="author" content="Hieu Nguyen">
+    <meta name="application-name" content="Microsoft Edge">
+    <meta name="generator" content="VSC">
+    <title>Document</title>
+    <link rel="stylesheet" href="./training.css">
+    <link rel="stylesheet" href="./font-awesome/fontawesome-free-5.12.0-web/css/all.min.css">
+    <script src="./font-awesome/fontawesome-free-5.12.0-web/js/all.min.js"></script>
+    <script type="text/javascript" src="javascript.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <style>
+        /* th,
+        td,
+        table {
+            border: 1px solid purple;
+            border-collapse: collapse;
+            width: 50%;
+        } */
+
+        input:invalid {
+            border: solid 3px red;
+        }
+
+        .blink{
+            animation-name: blinker;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        @keyframes blinker {
+            90%{
+                opacity: 0;
+            }
+            /* thời gian chạy là 2s, cứ sau 2s thì opacity chạy từ 90% về 0% và lên 90% là 1 ite */
+        }
+
+        .moving{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            animation: mymove 2s infinite;
+            animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+        }
+        @keyframes mymove {
+            from{ top: 100px; }
+            to{top: 200px;}
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(224, 208, 208); font-family: sans-serif;" class="background">
+    <!-- ultilities -->
+    <div class="sticky">Sticky box is here but it is overflow</div>
+    <div class="fixed">Fixed</div>
+
+    <!-- format text -->
+    <h3>Block tag h3: <i class="fab fa-facebook-f"></i></h3>
+    <p>p <strong>tag</strong> <span class="text-red">is also</span> <b>block</b></p>
+
+    <!-- list and table -->
+    <ul class="ul1">
+        <li class="li1">Menu 1
+            <ul class="ul2">
+                <li class="li2">Menu 1.1
+                    <ul class="ul3">
+                        <li>Menu 1.1.1</li>
+                        <li>Menu 1.1.2</li>
+                    </ul>
+                </li>
+                <li class="li2">Menu 1.2
+                    <ul class="ul3">
+                        <li>Menu 1.2.1</li>
+                        <li>Menu 1.2.2</li>
+                    </ul>
+                </li>
+            </ul>
+        </li class="li1">
+        <li class="li1">Menu 2
+            <ul class="ul2">
+                <li class="li2">Menu 2.1
+                    <ul class="ul3">
+                        <li>Menu 2.1.1</li>
+                        <li>Menu 2.1.2</li>
+                    </ul>
+                </li>
+                <li class="li2">Menu 2.2
+                    <ul class="ul3">
+                        <li>Menu 2.2.1</li>
+                        <li>Menu 2.2.2</li>
+                    </ul>
+                </li>
+            </ul>
+        </li class="li1">
+        <li>Menu 3</li>
+    </ul>
+
+    <ol type="I">
+        <li>ol có thể dùng xác định</li>
+        <li>với kiểu số or chữ, La Mã</li>
+    </ol>
+    <dl>
+        <dt>Tiêu đề</dt>
+        <dd>COntent</dd>
+    </dl>
+
+    <table cellspacing="4" cellpadding="10" border="1">
+        <colgroup>
+            <col style="width: 75%; background-color: antiquewhite;">
+            <col style="width: 25%">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td align="right">Content 1</td>
+                <td>Content 2</td>
+            </tr>
+            <tr>
+                <td>Content 3</td>
+                <td>Content 4</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- input -->
+    <input type="text" placeholder="url" pattern="[A-Za-z]{3,}" autocomplete="on" autofocus required>
+    <select>
+        <option value="Cat" selected>Cat</option>
+        <option value="Dog">Dog</option>
+    </select>
+    <textarea cols="30" rows="10">Hello</textarea>
+    <input list="animal">
+    <datalist id="animal">
+        <option value="Cat"></option>
+        <option value="Dog"></option>
+    </datalist>
+    <input type="file" accept="image/png, image/jpeg">
+
+    <!-- embed media -->
+    <!-- video là 1 inline ta làm cho nó ra giữa và 1 dòng bằng display block + margin 0 auto -->
+    <video controls muted width="50%" autoplay="" style="margin: 0 auto; display: block;" preload="auto">
+        <source src="./dia quay.mp4" type="video/mp4" />
+        <p>Your browser doesn't support HTML5</p>
+    </video>
+    <audio controls width="50%" autoplay muted style="margin: 0 auto; display: block;" loop>
+        <source src="./music_bkg.wav" type="audio/wav" />
+    </audio>
+    <object data="./background.jpg" type="image/jpg"></object>
+    <iframe src="#" frameborder="0" width="500px" height="500px"></iframe>
+    <embed type="image/jpg" src="./background.jpg" width="100px" height="100">
+    <img src="./background.jpg" alt="background" width="100" height="100" usemap="#test">
+    <map name="test">
+        <area shape="rect" coords="0,0,100,50" href="./background.jpg" alt="jkl">
+        <area shape="rect" coords="100,50,150,100" href="./background.jpg" download="newname.jpg">
+    </map>
+
+
+    <!-- Căn lề -->
+    <!-- width và height kp lúc nào cx dùng đc -->
+    <div style="width: 400px; height: fit-content; text-align: justify; margin: 0 auto;">In &nbsp; publishing and
+        graphic
+        design,
+        Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface
+        without
+        relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. </div>
+
+    <!-- chỉ đc dùng hoặc text-align justify or center mà thôi -->
+    <div style="width: 400px; height: fit-content; text-align: center;">In publishing and graphic design, Lorem ipsum is
+        a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on
+        meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. </div>
+
+    <!--Để căn text ra giữa theo chiều dọc.Ta có thể dùng flex như bth.K dùng flex thì k thể căn dọc mà responsice đc-->
+    <div style="position: relative; width: 100px; height: 100px; background-color: aqua;">
+        <div style="position: absolute; left: 200px; width: 100px; height: 100px; background-color: burlywood;"></div>
+    </div>
+
+    <div style="width: 1000px; height: 500px; display: flex; flex-direction: column; justify-content: center; ">
+        <div style="display: flex; justify-content: space-evenly; flex-direction: row;">
+            <div style="width: 100px; height: 100px; background-color: aqua;"></div>
+            <div style="width: 100px; height: 100px; background-color: red;"></div>
+        </div>
+        <div style="display: flex; justify-content: space-evenly; flex-direction: row;">
+            <div style="width: 100px; height: 100px; background-color: pink;"></div>
+            <div style="width: 100px; height: 100px; background-color: aqua;"></div>
+            <div style="width: 100px; height: 100px; background-color: red;"></div>
+            <div style="width: 100px; height: 100px; background-color: pink;"></div>
+            <div style="width: 100px; height: 100px; background-color: aqua;"></div>
+            <div style="width: 100px; height: 100px; background-color: red;"></div>
+        </div>
+        <div style="display: flex; justify-content: space-evenly; flex-direction: row;">
+            <div style="width: 100px; height: 100px; background-color: pink;"></div>
+            <div style="width: 100px; height: 100px; background-color: red;"></div>
+            <div style="width: 100px; height: 100px; background-color: pink;"></div>
+        </div>
+        <div style="display: flex; justify-content: space-evenly; flex-direction: row; align-items: center;">
+            <div style="width: 100px; height: 50px; background-color: pink;"></div>
+            <div style="width: 100px; height: 100px; background-color: red;"></div>
+            <div style="width: 100px; height: 100px; background-color: pink;"></div>
+        </div>
+    </div>
+    <!-- phân biệt lại: giả sử flex nằm ngang bên trong có vài thành phần. justify-content luôn cùng hướng sẽ giúp 
+    phân bố nó theo chiều ngang. giả sử đống đó trong 1 cái container mà kích thước container lớn hơn 1 phần tử nào đó
+    align-items sẽ giúp căn nó theo chiều dọc. align-content hiếm khi sử dụng. item theo chiều ngang như v mà container
+    quá hẹp width dẫn đến nó bị tràn xuống dưới khi ta dùng flex-wrap:warp; nếu mà flex-wrap rồi mà height của container
+    vẫn rộng hơn thì nó sẽ chỉnh các thành phần đó theo chiều dọc-->
+
+    <!-- form -->
+    <form>
+        <label for="content">Content: </label>
+        <input type="text" name="content">
+        <input type="submit">
+    </form>
+
+    <!-- animation, css special -->
+    <div id="box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <div class="blink">Test animation blink</div>
+    <div class="moving">Moving</div>
+
+    <!-- other tag -->
+    <br>
+    <hr width="50%"><!-- hr tự động ra giữa -->
+    <a href="www.google.com">Vô google</a>
+    <em><strike>This</strike> <i><mark>is</mark></i> em</em>
+    <code>&lt;</code>
+    <cite>The cite</cite>
+    <blockquote>blockquote</blockquote>
+    <abbr title="Ha Noi">HN</abbr>
+    <address>Address</address>
+    <bdo dir="rtl">rtl cho nó khác biệt</bdo>
+    <dfn>this is define</dfn>
+    <del>blue</del><ins>black</ins>
+    <pre>Thẻ pre 
+        nè</pre>
+    <sub>subcription</sub>
+    <sup>supscription</sup>
+
+    <button>Hello</button>
+    <big>Big</big>
+    <small>Small</small>
+    <nav>
+        <a href="www.google.com">Google</a>
+        <a href="www.facebook.com">Facebook</a>
+    </nav>
+
+    <!-- bootstrap -->
+    <div class="container-fluid text-dark bg-warning w-75">
+        <div class="row border">
+            <div class="col-sm-6">Header 1</div>
+            <div class="col-sm-6">Header 2</div>
+        </div>
+        <div class="row border">
+            <div class="col-sm-2">Content 1</div>
+            <div class="col-sm-3">Content 2</div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="navbar-header ml-sm-2">
+            <a href="#" class="navbar-brand">
+                <img src="" alt="logo" style="width: 64px;">
+            </a>
+        </div>
+        <button class="navbar-toggler mr-1" type="button" data-toggle="collapse" data-target="#navItem">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navItem">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Content 1</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link disabled">Content 2</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle">Content 3</a><!--dropdown-toggle dung cho text/button-->
+                    <span class="caret"></span>
+                    <div class="dropdown-menu dropdown-menu-left">
+                        <a class="dropdown-item" href="#">Content 1.1</a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">Content 1.2</a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto"><!-- mr-auto là mr chiếm hết space nhiều nhất có thể -->
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label for="name">Content: </label>
+                        <input type="text" class="form-control ml-sm-2" placeholder="Content to search" id="name">
+                        <button class="btn btn-outline-primary mr-2" type="submit">Search</button>
+                    </div>
+                </form>
+            </ul>
+        </div>
+    </nav>
+
+    <button class="btn" data-toggle="collapse" data-target="#target">Click to collapse</button>
+    <span class="collapse" id="target">Collape!!</span> <br>
+
+    <ul class="nav flex-lg-row nav-tabs nav-fill">
+        <!-- chú ý luôn đặt class lên đầu, 1 số TH phải v ms chạy đc -->
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#home">HOME</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#menu1">MENU 1</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" data-toggle="tab" href="#menu2">MENU 2</a>
+        </li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane text-center container justity-content-center active" id="home">HOME</div>
+        <div class="tab-pane text-center container justify-content-center fade" id="menu1">Menu 1</div>
+        <div class="tab-pane text-center container justify-content-center fade" id="menu2">Menu 2</div>
+        <!-- ra giữa với tab dùng text-center or d-flex justity-content-center nhưng riêng với tab-content tab-pane buộc dùng text-center -->
+    </div>
+
+    <div class="btn-group">
+        <button class="btn btn-outline-primary">Nut 1</button>
+        <button class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"></button>
+        <!-- cứ toggle set class và data-toggle là xong -->
+        <div class="dropdown-menu dropdown-menu-left">
+            <a href="#" class="dropdown-item">Content 1</a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">Content 2</a>
+        </div>
+    </div>
+    <div class="flex-lg-row d-flex justify-content-center">hello</div>
+    <noscript>This wont appear</noscript>
+
+</body>
+
+</html>

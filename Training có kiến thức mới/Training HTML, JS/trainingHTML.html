@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./trainingHTML.css">
+    <link rel="stylesheet" href="font-awesome/fontawesome-free-5.12.0-web/css/all.min.css">
+    <script src="font-awesome/fontawesome-free-5.12.0-web/js/all.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <style type="text/css">
+        table,
+        th,
+        td {
+            padding: 10px;
+            border: 1px solid red;
+            border-collapse: collapse;
+            /* các ô sẽ có chung border */
+        }
+    </style>
+</head>
+
+<body>
+    <!--ul và li chiếm toàn bộ kg, ta phải sửa cho li k còn chiếm toàn bộ kg nx -->
+    <ul>
+        <li class="li1">Menu 1
+            <ul class="ul1">
+                <li class="li2">Item 1.1
+                    <ul class="ul2">
+                        <li>Item 1.1.1</li>
+                        <li>Item 1.1.2</li>
+                        <li>Item 1.1.3</li>
+                        <li>Item 1.1.4</li>
+                    </ul>
+                </li>
+                <li class="li2">Item 1.2
+                    <ul class="ul2">
+                        <li>Item 1.2.1</li>
+                        <li>Item 1.2.2</li>
+                        <li>Item 1.2.3</li>
+                        <li>Item 1.2.4</li>
+                    </ul>
+                </li>
+                <li class="li2">Item 1.3
+                    <ul class="ul2">
+                        <li>Item 1.3.1</li>
+                        <li>Item 1.3.2</li>
+                        <li>Item 1.3.3</li>
+                        <li>Item 1.3.4</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="li1">Menu 2
+            <ul class="ul1">
+                <li class="li2">Item 2.1
+                    <ul class="ul2">
+                        <li>Item 2.1.1</li>
+                        <li>Item 2.1.2</li>
+                        <li>Item 2.1.3</li>
+                        <li>Item 2.1.4</li>
+                    </ul>
+                </li>
+                <li class="li2">Item 2.2
+                    <ul class="ul2">
+                        <li>Item 2.2.1</li>
+                        <li>Item 2.2.2</li>
+                        <li>Item 2.2.3</li>
+                        <li>Item 2.2.4</li>
+                    </ul>
+                </li>
+                <li class="li2">Item 2.3
+                    <ul class="ul2">
+                        <li>Item 2.3.1</li>
+                        <li>Item 2.3.2</li>
+                        <li>Item 2.3.3</li>
+                        <li>Item 2.3.4</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="li1">Menu 3
+            <ul class="ul1">
+                <li class="li2">Item 3.1
+                    <ul class="ul2">
+                        <li>Item 3.1.1</li>
+                        <li>Item 3.1.2</li>
+                        <li>Item 3.1.3</li>
+                        <li>Item 3.1.4</li>
+                    </ul>
+                </li>
+                <li class="li2">Item 3.2
+                    <ul class="ul2">
+                        <li>Item 3.2.1</li>
+                        <li>Item 3.2.2</li>
+                        <li>Item 3.2.3</li>
+                        <li>Item 3.2.4</li>
+                    </ul>
+                </li>
+                <li class="li2">Item 3.3
+                    <ul class="ul2">
+                        <li>Item 3.3.1</li>
+                        <li>Item 3.3.2</li>
+                        <li>Item 3.3.3</li>
+                        <li>Item 3.3.4</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <table>
+        <thead>
+            <tr>
+                <th>header</th>
+                <th>header 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>content</td>
+                <td>content 2</td>
+            </tr>
+        </tbody>
+    </table>
+    <input type="checkbox">
+    <form action="">
+        <input type="radio" name="value" checked>Value 1<br>
+        <input type="radio" name="value">Value 2<br>
+    </form>
+
+    <select name="" id="">
+        <option value="1">Item 1</option>
+        <option value="2">Item 2</option>
+        <option value="3">Item 3</option>
+    </select>
+    <hr width="45%">
+    <!-- cái width kp thẻ nào cx dùng đc, dùng css hơn -->
+    <video autoplay muted controls>
+        <source type="video/mp4"
+            src="https://r1---sn-i3b7knzs.c.2mdn.net/videoplayback/id/386474a3906ff0ba/itag/343/source/web_video_ads/ctier/L/acao/yes/ip/0.0.0.0/ipbits/0/expire/3776223758/sparams/acao,ctier,expire,hcs,id,ip,ipbits,itag,mh,mip,mm,mn,ms,mv,mvi,pl,rmhost,smhost,source/signature/84C920C881A6FBB1FBE976B24AF4D5A62185FE8C.79406E8AE069312D9CD4EDA5E2AE498E2A3BB029/key/cms1/cms_redirect/yes/hcs/sd/mh/u1/mip/2402:800:6133:7612:69f3:907a:dbb1:f833/mm/42/mn/sn-i3b7knzs/ms/onc/mt/1634139183/mv/m/mvi/1/pl/50/rmhost/r5---sn-i3b7knzs.c.2mdn.net/smhost/r5---sn-i3b7knse.c.2mdn.net/file/file.mp4" />
+    </video>
+    <div class="center-text">Center text</div>
+    <div class="test-justify">Multiline justify text. So this must be a long line</div>
+    <div class="center-by-auto">Test center by auto</div>
+    <div class="test-align-item">
+        <div style="width: fit-content">Test center by align item</div>
+        <i class="fas fa-skull-crossbones" style="font-size: 50px; color: red;"></i>
+    </div>
+
+    <div class="test-justify-content">
+        <div style="width:fit-content;line-height: 5px;">Test</div>
+        <div style="width:fit-content">test</div>
+    </div>
+
+    <div class="abc"><span>ABC</span></div>
+
+    <div class="container">
+        <div class="row">
+            <!-- chỉnh kích thước 1 card -->
+            <div class="col-sm-5 pl-0">
+                <div class="card shadow">
+                    <!-- header -->
+                    <h5 class="card-header">Featured</h5>
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <!-- body -->
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" class="card-link">Another link</a>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Cras justo odio</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                        </ul>
+                    </div>
+                    <!-- footer -->
+                    <div class="card-footer text-muted">
+                        2 days ago
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-5 pl-0">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="https://facebook.com" target="_self">Self</a>
+    <a href="https://facebook.com" target="_blank">Blank</a>
+
+    <div class="move">Text</div>
+
+    <div class="hoverTest">
+        <div class="hoverTest2  d-flex justify-content-center">Hello</div>
+    </div>
+
+</body>
+
+</html>

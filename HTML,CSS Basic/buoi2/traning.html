@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/training.css">
+  <link rel="stylesheet" href="font/Raleway-ExtraBold.ttf">
+  <link rel="stylesheet" href="font/Raleway-ExtraLightItalic.ttf">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+
+</head>
+
+<body class="body">
+  <!-- thẻ br xuống 1 dòng k kiểm soát đc chiều height -->
+  <!-- thẻ br dùng cho html, còn thẻ br/ dùng cho XHTML mở rộng hơn mà thôi -->
+  <br />
+  <div class="testFont">Test font</div>
+
+  <!-- phải có btn-group thì mới liền nhau chung một nhóm-->
+  <div class="btn-group">
+    <button type="button" class="btn btn-danger">Action</button>
+    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"></button>
+    <div class="dropdown-menu dropdown-menu-left">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Separated link</a>
+    </div>
+  </div>
+
+  <!-- các container mặc định có padding left right là 15-->
+  <!-- pt-* là thêm 4^* vào padding-top. -->
+  <!-- tương tự: t,b,l,r,x,y và 0,1,2,3,4,5,auto -->
+  <div class="container pt-1 pb-2 m-1 border">
+    <h1>My First Bootstrap Page</h1>
+    <p>This is some text.</p>
+  </div>
+  <!-- trong bootstrap chia màn hình thành 6 mức trong cái bảng và có 6 loại container trong cái bảng ta có 
+    nó thể hiện max-width tức là ví dụ nếu màn hình có kích thước nhỏ hơn 576px thì container luôn chiếm
+    full màn hình, dù class container có margin nhưng tự mất ở TH này. Còn nếu màn hình từ 992 đến dưới 1200 thì 
+    container bằng 960px và k thay đổi kích thước(kích thước là tất cả k tính margin như v margin sẽ tự căn cho 
+    kích thước đúng nv). Các app có kích thước thay đổi tùy thiết bị như v gọi là có tính responsive -->
+
+  <!-- p-* là chỉnh chung padding -->
+  <div class="container-fluid p-1 my-3 bg-primary text-white">
+    <h1>My First Bootstrap Page</h1>
+    <p>This is some text.</p>
+  </div>
+
+  <!-- grid trong bootstrap là hệ thống có class row bao ngoài class col-*-*. Nó chia màn hình thành max 12 cột
+    col-<kích thước loại thiết bị>-<số lượng cột trên 12 cột> Cái tên thiết bị tức là nếu dưới cái mốc kích
+    thước đó thì các col sẽ bị mỗi col 1 dòng hay bị cắt xuống. Ví dụ: ta dùng màn hình desktop để vào trang
+    web mà thu nhỏ kích thước của sổ sẽ thấy dưới 1 kích thước nào đó thì sẽ hiển thị co lại thành 1 col như
+    ta set. Tương tự nếu vào bằng điện thoại(k resize đc) nó sẽ tự tính kích thước điện thoại và hiển thị chuẩn.
+    Ta còn có thể kết hợp nhiều kích thước khác nhau nếu muốn với màn hình như nào thì tỉ lệ nó 
+    chiếm là khác nhau. Nó chia màn hình or chia thẻ block chứa nó -->
+  <div class="container-fluid">
+    <div class="row border">
+      <div class="col-md-1 col-lg-2 ">Hello</div>
+      <div class="col-md-1 col-lg-1 ">World 2 lines why overflow</div>
+    </div>
+    <div class="row">
+      <div class="col-lg-1">My nameaaaaaaaaaaaaaaaaaaa is a very long word can cause error </div>
+      <div class="col-lg-1">is Hieu 2 line what happen</div>
+    </div>
+    <div class="row">
+      <div class="col">My nameaaaaaaaaaaaaaaaaaaa is a very long word can cause error </div>
+      <div class="col">is Hieu 2 line what happen</div>
+    </div>
+    <!-- nếu k set số thì tự động chia đều.K set kích thước thì co đến khi nào k co đc nx thì ms thành 1 col -->
+  </div>
+
+  <!-- nav là ngang = display flex, nav-default là dọc or nav thêm flex-column, 
+  navbar là có thêm mấy cái chấm dùng ở ul nếu dùng navbar với thẻ nav thì mới chuẩn ngang bth -->
+  <!-- nav-item là các li -->
+  <!-- nav-link khi có link -->
+  <!-- khi dùng nav-pills và nav-tabs thì cần có active để biết đang chọn cái nào ms hiện đc -->
+  <ul class="nav justify-content-start flex-column flex-lg-row nav-tabs nav-fill">
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#home">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="tab" href="#menu1">Menu1</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#menu2">Menu2</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Disabled</a>
+    </li>
+  </ul>
+
+  <!-- set active hay fade đầu tiên là hiển thị trạng thái ban đầu thôi -->
+  <!-- cái id của thẻ gì còn để href đến vị trí đó bằng dấu # or data-target -->
+  <div class="tab-content">
+    <div class="tab-pane container active" id="home">HOME</div>
+    <div class="tab-pane container active" id="menu1">Menu1</div>
+    <div class="tab-pane container fade" id="menu2">Menu2</div>
+  </div>
+
+  <button data-toggle="collapse" data-target="#demo">Collapsible</button>
+  <div id="demo" class="collapse">
+    Lorem ipsum dolor text....
+  </div>
+
+  <!-- mấy cái trên kp là thanh điều hướng, cái dưới mới gọi là thanh điều hướng -->
+  <!-- navbar-expand-sm tức khi đến kích thước sm nó sẽ thu gọn -->
+  <!-- nav-brand nếu muốn thêm vào 1 cái logo -->
+  <!-- fixed- nếu k muốn bị che mất thì tự dùng padding responsive cho body -->
+  <nav class="navbar navbar-expand-md bg-body navbar-light fixed-top">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        <img src="/imgs/gift.png" style="width:64px;">
+      </a>
+    </div>
+    <!-- có thể dùng navbar-brand như 1 item cx đc chứ k cần tách ra -->
+    <!-- ../ sẽ trỏ đến root còn /sẽ trỏ đến cùng cấp hiện tại -->
+    <!-- nó bị collapse tùy vào navbar-expand- ta set bên trên -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- navbar-collapse đáng lẽ là đủ rồi nhưng nó vẫn phải có class collapse là TT bđ nx  -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <!-- mr-auto là sang trái -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Javascript</a>
+        </li>
+        <!-- dropdown dùng ở cha để xác định đây là 1 dropdown-menu -->
+        <li class="nav-item dropdown">
+          <!-- dropdown-toggle dùng vào nút or cái trực tiếp click vào để làm dropdown cái khác -->
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Css</a>
+          <span class="caret"></span>
+          <!--dropdown-menu thêm các giá trị mặc định cho menu vẫn cần thiết còn dropdown-menu-right chỉ căn phải-->
+          <div class="dropdown-menu-left dropdown-menu">
+            <!-- dropdown-item khi dùng có thể dùng phím xuống và ESC để đóng mớ menu -->
+            <a class="dropdown-item" href="#">Test 1</a>
+            <a class="dropdown-item" href="#">Test 2</a>
+            <a class="dropdown-item" href="#">Test 3</a>
+          </div>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Bootstrap</a>
+        </li>
+      </ul>
+    </div>
+    
+  </nav>
+
+</body>
+
+</html>

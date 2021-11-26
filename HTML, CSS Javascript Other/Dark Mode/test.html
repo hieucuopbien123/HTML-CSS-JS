@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./test.css">
+</head>
+<body>
+    <label class="label" for="checkbox2">
+        <input type="checkbox" id="checkbox2"> 
+        <div class="slider2"></div>
+    </label>
+
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+        </label>
+        <!-- ta bt label dùng ngang hàng với input với for để dùng kết hợp text với input nhưng ở đây ta dùng label bao
+        ngoài input để style nó với cơ chế: bao ngoài input và 1 thẻ div, cho input display none, khi toggle input thì
+        style lại cái thẻ div bên trong-> thẻ div có trạng thái thay đổi đại diện cho cái input check box kia-->
+        <!-- label for input là để ấn vào label cx kích hoạt input mà label hiện ra thẻ div là cái toggler nên mỗi khi
+        ấn vào thì nó sẽ chuyển-->
+    </div>
+
+    <p class="test-selector"> is </p>
+
+    <h2>Animation background</h2>
+
+    <!-- tạo ribbon hình tam giác -->
+    <div class="ribbon"></div>
+
+    <span class="test-border">test border</span>
+    <div class="test-before">abc</div>
+
+    <div class="div">
+        <div>hello</div>
+        <span class="div test2class">world</span>
+    </div>
+    <div class="div">hello</div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.thanhtieude {
+    background-color: cadetblue;
+    background-blend-mode: lighten;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.smallIcon {
+    width: 15%;
+    justify-content: flex-end;
+    display: flex;
+}
+
+.tieudegiua {
+    width: 70%;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.QC {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: flex-end;
+}
+
+.QCImage {
+    margin-top: 50px;
+}
+
+.sticky {
+    position: fixed;
+    top: 90%;
+    background-color: bisque;
+    width: 50px;
+    height: 50px;
+}
+
+.contentMid {
+    width: 70%;
+    padding: 10px;
+}
+
+.contentMid1 {
+    display: flex;
+}
+
+.contentMid11 {
+    font-size: 20px;
+    width: 50%;
+    background-color: cadetblue;
+    margin: 1px;
+}
+
+.contentMid12 {
+    width: 50%;
+    margin: 1px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contentMid121 {
+    font-size: 20px;
+    background-color: cadetblue;
+}
+
+.contentMid123 {
+    font-size: 20px;
+    margin-top: 1px;
+    background-color: cadetblue;
+}
+
+.forul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+/* thường thì ta có thể xét fix tỉ lệ nhưng thg cho 1 con số cực nhỏ, còn lại là set phần trăm. Như v khi 
+resize màn hình sẽ k ảnh hưởng đến nội dung ta set */
+.fortable {
+    border: 1px;
+    width: 100%;
+    margin-left: 10px;
+}

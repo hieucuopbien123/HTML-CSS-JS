@@ -1,0 +1,113 @@
+*{
+    margin: 1px;
+}
+
+.center-text{
+    text-align: center;
+}
+
+.test-justify{
+    width: 10%;
+    text-align: justify;
+}
+
+.center-by-auto{
+    width: 5%;
+    margin: 0 auto;
+    /* tức mt 0px, mb 0px, ml và mr là auto */
+}
+
+.test-align-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* dóng thẳng item ngược chiều flex-direction */ 
+}
+
+.test-justify-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* chiều direction */
+    width: 500px;
+    height: 200px;
+}
+
+.li1{
+    position: relative;
+    width: fit-content;
+    white-space: nowrap;
+}
+
+.li2{
+    position: relative;
+    width: fit-content;
+    white-space: nowrap;
+}
+
+.ul1{
+    position: absolute;
+    display: none;
+    list-style: none;
+    left: 13px;
+    top: 0px;
+}
+
+.li1:hover .ul1{
+    display: block;
+}
+
+.ul2{
+    position: absolute;
+    display: none;
+    left: 20px;
+    top: 0px;
+    list-style: none;
+}
+
+.li2:hover .ul2{
+    display: block;
+}
+/* ta cho thẻ chú ý thẻ li cho fit-content nh khi nó ra bị xuống dòng chỗ đó như ở trên nên ta phải set fix. Phải set
+sao cho nó cùng 1 dòng nên dùng thêm white-space: nowrap; */
+
+.abc{
+    display: flex;
+    width: 70%;
+    align-items: center;
+    height: 300px;
+}
+@media (max-width: 1000px) {
+    .abc{
+        background-color: red;
+    }
+}
+
+.move{
+    animation: move 4s infinite, blinker 1s infinite;
+    /* khi dùng multi animationo phải dùng ',' vì nếu khai báo 2 class thì là cái sau đè cái trước */
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    transform: rotate(45deg);
+}
+
+@keyframes move {
+    from{
+        top: 0px;
+    }
+    to{
+        top: 100px;
+    }
+}
+
+@keyframes blinker {
+    50%{
+        opacity: 0;
+    }
+}
+
+.hoverTest:hover .hoverTest2{
+    background-color: red;
+}

@@ -1,0 +1,212 @@
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 1000;
+}
+/* cục bao ngoài switcher sẽ nổi lên trên và align các thứ bên trong */
+
+.theme-switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+}
+/* set vị trí */
+
+.theme-switch input {
+    display: none;
+}
+/* cái này là chỉ ẩn thẻ input nằm trong class tên là theme-switch. Dùng như này đỡ khai báo thêm class mới */
+
+.slider {
+    background-color: #999;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+}
+/* cái background của cục tròn tròn */
+
+.slider:before {
+    background-color: white;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
+}
+/* cái cục tròn tròn mà ta toggle chính là before */
+
+input:checked+.slider {
+    background-color: #eee;
+}
+/* nếu input checked thì slider ngang hàng với input sẽ đổi màu */
+
+input:checked+.slider:before {
+    transform: translateX(26px);
+    /* cái này như kiểu position nhưng dễ hơn. Tương đương với translate(26px,0); translate3D(26px,0,0); */
+}
+/* nếu input checked thì cục tròn tròn sẽ đổi vị trí sang phải và ngược lại*/
+
+.slider.round {
+    border-radius: 34px;
+}
+/* bo tròn cái cục background */
+
+.slider.round:before {
+    border-radius: 50%;
+}
+/* bỏ tròn cục bên trong */
+
+/* để before after hoạt động bắt buộc phải có content. Khi hiển thị ra, ta chỉ có thể bôi đen text bth, k thể bôi đen
+đoạn chữ before hay after*/
+.test-selector::before {
+    content: "This";
+}
+
+.test-selector::after {
+    content: "awesome";
+}
+
+/* Nếu content="", họ dùng làm các kiểu animation đẹp mắt */
+h2 {
+    display: block;
+    margin: 50px;
+    padding: 10px;
+    color: black;
+    position: relative;
+    font-weight: bold;
+    width: fit-content;
+}
+
+h2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: auto;
+    /* auto là chả có gì tự động v */
+    /* mặc định selector nằm ở bên phải của thẻ. ta làm như này là đã thay đổi vị trí của nó. thực ra nó có phạm
+    vi hẹp là bên trong thẻ nên dùng right: 0; là bên trong thẻ bên phải */
+    right: 0;
+    width: 0;
+    background-color: red;
+    transition: .25s;
+    height: 100%;
+    z-index: -1;
+    /* k set width và height thì sẽ là 0px k hiện gì cả */
+    /* transition giúp hiện animation khi dùng thêm như hover */
+    /* ta thg dùng thẻ bth với relative và selector dùng absolute theo cái relative đó như này */
+    /* phải dùng thêm z-index ở selector mới đc */
+}
+
+h2:hover::before {
+    width: 100%;
+    left: 0;
+    right: auto;
+    /* selector của thẻ có phạm vi max là trong thẻ hiện tại nên 100% là của cả thẻ h2 */
+}
+/* animation: ban đầu có kích thước là 0. rê chuột vào có width 100% ms hiện ra; từ right 0 sang left 0 thực chất k có 
+gì thay đổi vì right hay left thì vị trí nó vẫn là như v khi width 100%; nên chỉ là chuyển kích thước từ 0-100%.
+Khi nhả chuột ra kích thước về 0, nó co lại về vị trí ban đầu ở đây là right 0 bên co về bên phải */
+/* dùng :: hay : đều ok or dùng : vì 1 số trình duyệt k hỗ trợ :: */
+
+.ribbon{
+    margin: 10px;
+    width: 300px;
+    height: 200px;
+    background-color: #eee;
+    border-radius: 30px;
+    position: relative;
+}
+.ribbon:before{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50px;
+    border-top: 10px solid #eee;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+}
+/* chú ý là border nó có kiểu hình thang cân nên có thể tận dụng làm ribbon tam giác như này */
+/* before, after nó giả định có 1 thẻ nằm ở bên trong thẻ hiện tại có width height 0 0 */
+.test-border{
+    margin: 10px;
+    border-top: 10px solid red;
+    border-left: 10px solid yellow;
+    border-right: 10px solid black;
+    border-bottom: 10px solid red;
+}
+
+.test-before{
+    width: 100px;
+    height: 100px;
+    background-color:  green;
+    position: relative;
+    margin: 100px;
+}
+.test-before::before{
+    content: "def";
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+/* trong html cx tương tự các ngôn ngữ khác, khi width height ta set cực nhỏ mà content bên trong lớn thì nó vẫn sẽ
+hiện hết chèn ra ngoài như bth */
+/* khi content có giá trị thì before nó hiện ở mốc left 0 top 0 của thẻ, chú ý là nó kp hiện đằng trc vị trí thẻ hiện tại 
+mà nó chiếm vị trí thẻ và đẩy text thẻ ra sau nó, ta hiểu là nó nằm 0,0 vị trí hiện tại của thẻ chứ kp thẻ cố định và nó
+chỉ hiện đằng trước */
+/* khi content k có giá trị thì mặc định width và height theo content nên ở TH này là 0-> ta phải chủ động set, width 
+height và vị trí(absolute) nếu k nó sẽ k hiện. Có content thì vị trí bị đẩy ra như nói bên trên nhưng k có thì ta set và 
+k làm được kiểu đẩy thẻ lên để hiện vào vị trí của thẻ nx vì dùng position */
+/* VD trên dùng position 0 0 mà content có và 2 text bị đè nhau */
+
+.div div{
+    display: none;
+}
+/* chỉ đổi thẻ div nằm trong class div */
+
+.div.test2class{
+    background-color: red;
+}
+/* chỉ đổi thẻ có cả 2 class */
+
+/* có nhiều kiểu: .class1.class2 ; .class1 .class2 ; .class1 + .class2 ; .class1:before ; .class1:hover:before ; 
+.class1:checked+.class2:before ; .class1.class2:before 
+nhờ v mà ta k cần tạo nhiều class mà chỉ cần vài class để truy cập vào toàn bộ các thứ bên trong*/
+
+
+/* remake */
+.slider2{
+    background-color: rgb(107, 107, 107);
+    border-radius: 30px;
+    width: 50px;
+    height: 30px;
+    position: relative;
+}
+.slider2::before{
+    position: absolute;
+    left: 2px;
+    top: 2.5px;
+    content: "";
+    width: 48%;
+    height: 80%;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+.label input{
+    display: none;
+}
+.label input:checked+.slider2:before{
+    left: 23px;
+}

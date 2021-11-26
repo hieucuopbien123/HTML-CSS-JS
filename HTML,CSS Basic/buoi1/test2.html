@@ -1,0 +1,98 @@
+<html>
+
+<head>
+    <style type="text/css" media="all">
+        #top {
+            height: 50px;
+            width: 800px;
+            font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+            color: #FFF;
+            font-size: 36px;
+            text-align: center;
+            background-color: #009;
+            /* chỉnh cả chữ cả khung */
+        }
+
+        #main {
+            height: 200px;
+            width: 800px;
+        }
+
+        #left {
+            height: 201px;
+            width: 165px;
+            text-align: justify;
+            float: left;
+            padding-left: 15px;
+            padding-right: 20px;
+            overflow: hidden;
+        }
+
+        /* bẫy của float: nó vốn dùng để khiến cho 1 thẻ inline bị trôi sang phải or trái và các thẻ khác nếu
+        đụng nó sẽ phải tránh nên thường dùng kiểu làm cho 1 bức ảnh chèn vào giữa đoạn text
+        Ở đây ta phải cho height của nó chuẩn ví dụ cho height của left chỉ cần quá xuống dưới 1 tẹo là toang
+        vì copyright đụng 1 tí vào margin-bottom của nó cũng khiến cho text-align của Copyright phải né nó ra 
+        dẫn đến bị lệch. VD xét 201px là toang */
+        /* float còn khiến cho thẻ block trở thành inline */
+
+        #right {
+            width: 581px;
+            float: left;
+            /* padding-left: 15px; */
+            border-left: 1px solid;
+            height: 100%;
+            padding-left: 10px;
+            /* dùng padding chứ kp margin */
+        }
+
+        #bottom {
+            height: 50px;
+            width: 800px;
+            text-align: center;
+            color: #FFF;
+            font-weight: bold;
+            line-height: 50px;
+            background-color: #009;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="height:300px; width:800px; border:solid thin #00F">
+        <div id="top">Tin hot nhất trong ngày</div>
+        <div id="main">
+            <div id="left">
+                <p>TT - Để mở cánh cửa thép dày cộp dẫn vào tầng hầm chi nhánh ngân hàng Sociestes tại thành phố
+                    Nice(Pháp), hai chiếc chìa khóa phải được tra vào hai ổ khóa đặt ở những vị trí khác nhau. Sicieste
+                    đã rất tự hào về ...</p>
+                <!-- lồng thẻ liên tục, buộc có flex ở cha or float ở con để div k chiếm hết k gian -->
+            </div>
+            <div id="right">
+                <p><span style="font-size:24px; font-weight:800">Tin tức</span></br> TT - Ngày 7-4, UBND huyện Đức Trọng
+                    (Lâm Đồng) cho biết đã ra quyết định kỷ luật cảnh cáo đối với hai trường công an xã Đa Quyn và Tà
+                    Năng vì thiếu tinh thần trách nhiệm trong công tác quản lý.</br></br> W3School - The Largest Web
+                    Developer Site On The Next !</p>
+            </div>
+        </div>
+        <div id="bottom">Copyright</div>
+    </div>
+
+    <!-- Tổng hợp các cách căn lề chỉnh vị trí -->
+    <!-- 
+        1)text-align: center; sẽ căn phần text mọi cấp trong thẻ đó ra giữa theo chiều ngang. text-align: justify
+        còn khiến multiline text căn thành hình chữ nhật trong các dòng nhìn đẹp hơn
+        2)margin: auto; sẽ căn cho margin-left = margin-right chia đều 2 bên nếu có-> cần tạo sao cho margin
+        tồn tại ví dụ dùng thẻ div + khai báo width=> or ta làm thủ công
+        3)display: flex;(cách chuẩn nhất) sẽ làm các thẻ con trở nên flexible, tức là thẻ dù block hay inline
+        cũng đều giống inline. Và ta dùng các lệnh để chỉnh: flex-direction(default là ngang), flex-wrap,
+        align-content, align-items(2 cái căn ngang: cái đầu 2 bên trục(phải có 2 thành phần 2 bên trục ms có hiệu
+        ứng), cái sau trục ở tâm), justify-content(căn dọc), flex để chỉnh tỉ lệ các item bên trong. 
+        (inline-flex khiến cả cha cũng thành inline, làm cho các vùng space của cha biến mất k chỉnh vị trí đc nx)
+        4)position: relative/sticky/absolute/fixed trong đó absolute theo vị trí của cha có relative or body là 
+        cách chỉnh vị trí tương đối giữa các thẻ với nhau, các thẻ inline hay block cx đều thành inline. Ta có 
+        thể dùng thủ công với việc chỉnh margin/padding để căn lề->cx khiến thẻ block co lại 
+        5)float: làm cho 1 cái gì lơ lửng ở vị trí nào khiến cho các cái khác cùng cấp phải né nó ra
+    -->
+</body>
+
+</html>

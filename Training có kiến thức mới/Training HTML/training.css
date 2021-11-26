@@ -1,0 +1,87 @@
+#text-red{
+    color: red !important;
+}/* dùng css với class k đc dùng #, trc hiểu sai */
+
+/* thẻ ul bản thân nó đã là 1 thẻ block, ta muốn border nhỏ lại phải chỉnh width cho nó thì margin vẫn chiếm full
+nếu muốn đè thẻ khác sang phải nó thì phải biến nó thành 1 thẻ inline với display: inline-flex; */
+.ul1{
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 200px;
+    list-style: square;
+    float: right;
+    padding-right: 100px;
+}
+
+.ul2{
+    display: none;
+    position: relative;    
+    left: 30px;
+    top: -10px;
+}
+/* khi dùng position thì nó phụ thuộc vào vị tri của vật khác dẫn đến trở nên độc lập luôn=> tức là chỗ này k dùng
+position thì mỗi lần hover hiện ra kích thước của thẻ ul lớn nhất bao ngoài sẽ được nới rộng ra. Còn dùng thì độc lập
+ta có thể chỉnh tiếp các vị trí */
+
+.li1:hover .ul2{
+    display: block;
+}
+
+.ul3{
+    display: none;
+    position: relative;
+    left: 40px;
+    top: -20px;
+}
+
+.li2:hover .ul3{
+    display: block;
+}
+
+.sticky{
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    position: sticky;
+    top: 400px;/* buộc phải có top, có thể k có left */
+    left: 100px;
+    font-weight: bolder;
+    font-size: 14px;
+    overflow: scroll;
+}
+
+.fixed{
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+/* chú ý tạo css cho id thì buộc dùng # */
+#box{
+    width: 500px;
+    height: 200px;
+    transform: rotate(90deg);
+    /* nếu rotate nó rotate kèm các thành phần bên trong */
+    background-color: greenyellow;
+    display: flex;
+}
+#box div{
+    background-color: indianred;
+    width: 100px;
+    height: 100px;
+    margin: 1px;
+}
+#box div:nth-child(2){
+    background-color: blue;
+}
+
+.background{
+    width: 1000px;
+    height: 500px;
+    background-image: url(./background.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}

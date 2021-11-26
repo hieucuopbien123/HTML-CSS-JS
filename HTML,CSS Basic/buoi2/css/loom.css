@@ -1,0 +1,735 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* vẫn chưa hiểu rõ về padding và margin khi lồng nh cái vô nhau */
+
+@font-face {
+    font-family: ExtraBold;
+    src: url(../font/Raleway-ExtraBold.ttf);
+}
+
+/* mấy font này phải add vào file html nx chứ */
+@font-face {
+    font-family: Light;
+    src: url(../font/Raleway-Light.ttf);
+}
+
+@font-face {
+    font-family: Medium;
+    src: url(../font/Raleway-Medium.ttf);
+}
+
+@font-face {
+    font-family: Bold;
+    src: url(../font/Raleway-Bold.ttf);
+}
+
+.body {
+    background-color: #fefefe;
+}
+
+.head {
+    background-color: #f5f5f5;
+}
+
+.container1div1 {
+    width: 1170px;
+    height: 109px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.container1div1text {
+    display: flex;
+}
+
+.container1div1text1 {
+    font-family: ExtraBold;
+    font-size: 13px;
+    margin-left: 50px;
+    color: #606060;
+}
+
+.container1div1text1:hover {
+    color: #1abb9c;
+    cursor: pointer;
+}
+
+/* cach doi con tro chuot khi hover */
+
+.container2 {
+    margin: 0 auto;
+    /* width: 1170px; */
+    height: fit-content;
+}
+
+.container2div1 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.Hello {
+    font-family: ExtraBold;
+    font-size: 35px;
+    color: #606060;
+}
+
+.acreative {
+    font-family: Light;
+    font-size: 25px;
+    color: #6d6d6d;
+}
+
+.container2div2 {
+    background-image: url(../imgs/content.jpg);
+    background-size: contain;
+    position: relative;
+    height: 523px;
+    background-repeat: no-repeat;
+}
+
+.content1 {
+    height: 45px;
+    width: 45px;
+    background-color: #fdfdfd;
+    position: absolute;
+    left: 20px;
+    top: 253px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content2,
+.content3 {
+    background-color: #fdfdfd;
+    height: 48px;
+    position: absolute;
+    left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Medium;
+    color: #606060;
+}
+
+.content3 {
+    width: 421px;
+    bottom: 50px;
+}
+
+.content2 {
+    width: 361px;
+    bottom: 101px;
+    font-size: 20px;
+}
+
+.magna {
+    color: #28bfa2;
+}
+
+.thanhngangtrai {
+    margin-left: 430px;
+    height: 86px;
+    border-bottom: 1px solid;
+    border-color: #e1e1e1;
+    width: 82px;
+}
+
+.whatwe {
+    font-family: ExtraBold;
+    font-size: 16px;
+    color: #606060;
+    padding-left: 21px;
+    padding-right: 21px;
+    padding-top: 75px;
+    padding-bottom: 40px;
+}
+
+.thanhngangchu {
+    display: flex;
+}
+
+.thanhngangphai {
+    height: 86px;
+    border-bottom: 1px solid;
+    border-color: #e1e1e1;
+    width: 82px;
+}
+
+/* 
+.whatwedo{
+    display: flex;
+    justify-content: space-between;   
+} */
+
+.whatwedo1 {
+    border-style: double;
+    border-width: 5px;
+    height: 340px;
+    border-color: #e1e1e1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+    /* flex-direction đổi trục alignitem center theo trục đứng justify content center theo trục ngang */
+}
+
+.whatwedo1img {
+    padding-top: 50px;
+    padding-bottom: 31px;
+}
+
+.whatwedo1text1 {
+    width: fit-content;
+    font-family: ExtraBold;
+    font-size: 15px;
+    color: #606060;
+    padding-bottom: 15px;
+}
+
+.whatwedo1text2 {
+    text-align: center;
+    font-family: Medium;
+    color: #7a7a7a;
+    font-size: 14px;
+    line-height: 25px;
+    padding-right: 20px;
+    padding-left: 20px;
+    /* dung line height se can giua chieu doc */
+}
+
+.backgroundimg1 {
+    background-image: url(../imgs/background1.jpg);
+    height: 408px;
+    width: 1600px;
+    position: relative;
+}
+
+/* nếu có ô màu thì phải dùng position nếu có padding và margin vì sẽ in
+cả màu của ô ra padding còn margin thì kéo cả khung to xuống
+còn nếu là text thì chả cần cứ viết bth với backgroundimg */
+
+.thanhngangtrai2 {
+    margin-left: 645px;
+    height: 86px;
+    border-bottom: 1px solid;
+    border-color: #777777;
+    width: 82px;
+}
+
+.thanhngangphai2 {
+    height: 86px;
+    border-bottom: 1px solid;
+    border-color: #777777;
+    width: 82px;
+}
+
+.ourprocess {
+    font-family: ExtraBold;
+    font-size: 16px;
+    color: #d0d0d0;
+    padding-left: 21px;
+    padding-right: 21px;
+    padding-top: 75px;
+}
+
+.backgroundimg1text1 {
+    color: #d0d0d0;
+    padding-top: 20px;
+    font-size: 14px;
+    font-family: Medium;
+    width: 1239px;
+    text-align: center;
+    padding-left: 366px;
+    line-height: 25px;
+}
+
+.ourprocesscontent1 {
+    width: 94px;
+    height: 94px;
+    position: absolute;
+    top: 205px;
+    left: 267px;
+    border-radius: 50px;
+    background-color: #1abb9c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid;
+    border-color: #1abb9c;
+}
+
+.ourprocesscontent2 {
+    padding-left: 358px;
+    display: flex;
+}
+
+.thanhngang {
+    height: 86px;
+    border-bottom: 1px solid;
+    border-color: #777777;
+    width: 191px;
+    margin-left: 20px;
+}
+
+.ourprocesscontent22 {
+    width: 94px;
+    height: 94px;
+    border-radius: 50px;
+    border: 2px solid;
+    border-color: #1abb9c;
+    margin-left: 20px;
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ideas,
+.solution,
+.touch,
+.winning {
+    color: #dddddd;
+    font-size: 14px;
+    font-family: ExtraBold;
+    padding-top: 20px;
+    width: fit-content;
+}
+
+.ideas {
+    padding-left: 250px;
+}
+
+.solution {
+    padding-left: 198px;
+}
+
+.touch,
+.winning {
+    padding-left: 210px;
+}
+
+.ourprocesscontent3 {
+    display: flex;
+}
+
+.container3 {
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+}
+
+.container3div1 {
+    display: flex;
+    /* justify-content: space-between; */
+    margin-bottom: 80px;
+
+}
+
+.imgs {
+    width: 369px;
+}
+
+.contenttext1,
+.contenttext2,
+.contenttext3 {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.contenttext1 {
+    padding-top: 20px;
+    color: #606060;
+    font-family: ExtraBold;
+    font-size: 15px;
+}
+
+.contenttext2 {
+    padding-top: 10px;
+    color: #53ccb5;
+    font-family: Medium;
+    font-size: 12px;
+}
+
+.contenttext3 {
+    color: #7a7a7a;
+    padding-top: 15px;
+    font-size: 14px;
+    font-family: Medium;
+    width: 340px;
+    line-height: 25px;
+}
+
+/* .{
+    background-image: url(../imgs/background3.jpg);
+    width: 1600px;
+    height: 330px;
+} */
+
+
+.thanhngangtrai3 {
+    margin-left: 577px;
+    height: 86px;
+    border-bottom: 1px solid;
+    border-color: #777777;
+    width: 82px;
+}
+
+.text1 {
+    font-size: 20px;
+    font-family: Light;
+    width: 1280px;
+    color: #d8d8d8;
+    text-align: center;
+    padding-left: 327px;
+    line-height: 25px;
+    padding-top: 35px;
+    padding-bottom: 20px;
+}
+
+.barclay {
+    font-size: 12px;
+    color: #1abb9c;
+    font-family: ExtraBold;
+    padding-left: 742px;
+    padding-bottom: 15px;
+}
+
+.ovuong {
+    padding-left: 774px;
+    display: flex;
+}
+
+.ovuongnhat,
+.ovuongdam {
+    width: 10px;
+    height: 10px;
+    border: 1px solid;
+    margin-right: 4px;
+}
+
+.ovuongdam {
+    color: #bebebe;
+}
+
+.ovuongnhat {
+    border-color: #777777;
+}
+
+.devcol {
+    margin-bottom: 80px;
+}
+
+.container4 {
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+}
+
+.backgroundimg3 {
+    background-image: url(../imgs/background2.jpg);
+    width: 1600px;
+    height: 470px;
+}
+
+.thanhngangtrai4 {
+    margin-left: 404px;
+    height: 86px;
+    border-bottom: 1px solid;
+    border-color: #e1e1e1;
+    width: 82px;
+}
+
+.container4div1 {
+    margin-top: 30px;
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+.display {
+    display: flex;
+    margin-top: 22px;
+    position: relative;
+}
+
+.feb1 {
+    width: 45px;
+    height: 45px;
+    border: 1px solid #b1b1b1;
+}
+
+.feb2 {
+    position: absolute;
+    left: 12px;
+    top: 10px;
+}
+
+.ultricies {
+    color: #606060;
+    font-size: 16px;
+    font-family: ExtraBold;
+    padding-left: 14px;
+}
+
+.journal {
+    color: #1abb9c;
+    font-family: Medium;
+    font-size: 12px;
+    padding-left: 14px;
+    padding-top: 4px;
+}
+
+.nulla {
+    color: #7a7a7a;
+    font-size: 14px;
+    font-family: Medium;
+    width: 370px;
+    padding-top: 10px;
+    line-height: 21px;
+}
+
+.backgroundimg3div1 {
+    display: flex;
+    justify-content: space-between;
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.getin {
+    color: #f0f0f0;
+    font-family: Bold;
+    font-size: 14px;
+    padding-top: 65px;
+    width: 249px;
+    margin-bottom: 20px;
+}
+
+.fusce,
+.fusce2,
+.fusce4 {
+    font-family: Medium;
+    font-size: 14px;
+    color: #cacaca;
+    line-height: 23px;
+    width: 255px;
+}
+
+.display3 {
+    display: flex;
+    margin-top: 30px;
+}
+
+.imgphone {
+    margin-top: 30px;
+}
+
+.imgemail {
+    margin-top: 10px;
+}
+
+.moonshine {
+    color: #cacaca;
+    font-size: 14px;
+    font-family: Medium;
+    width: 200px;
+    padding-left: 13px;
+}
+
+.chu {
+    padding-top: 5px;
+}
+
+.fusce2 {
+    padding-top: 30px;
+}
+
+.fusce4 {
+    padding-top: 25px;
+}
+
+.fusce3 {
+    font-family: Medium;
+    font-size: 12px;
+    color: #cacaca;
+    line-height: 23px;
+    width: 255px;
+}
+
+.end {
+    font-family: Medium;
+    font-size: 14px;
+    color: #cacaca;
+    padding-left: 215px;
+    padding-top: 85px;
+}
+
+.container1 {
+    display: flex;
+    justify-content: space-between;
+    line-height: 110px;
+    /* line height se tu can moi thu ra giua */
+}
+
+.row-1 {
+    justify-content: space-between;
+}
+
+.dev-col {
+    width: 24%;
+}
+
+@media (max-width: 1000px) {
+    .dev-col {
+        width: 100%;
+    }
+
+    .whatwedo1 {
+        height: fit-content;
+    }
+}
+
+/* @media (max-width: 768px) {
+    .dev-div{
+        margin: 0 auto;
+        width: fit-content;
+    } 
+     
+    .body{
+        width: 700px;
+    }
+    .container1{
+        width: 717px;
+    }
+    .container1div1{
+        width: 710px;
+        margin: 0px;
+    }
+    .acreative{
+        width: 725px;
+    }
+    .container2div2{
+        width: 714px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 362px;
+    }
+    .content1{
+        top: 130px;
+    }
+    .container2{
+        width: 714px;
+    }
+    .thanhngangtrai{
+        margin-left: unset;
+    }
+    .thanhngangchu{
+        justify-content: center;
+    }
+    .whatwedo1{
+    }
+    .dev-col{
+        margin-bottom: 20px;
+        
+    }
+    .content2{
+        bottom: 72px;
+    }
+    .content3{
+        bottom: 18px;
+    }
+    .backgroundimg1{
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 714px;
+    }
+    .thanhngangtrai2{
+        margin-left: unset;
+        height: 51px;
+    }
+    .ourprocess{
+        padding-top: 39px;
+    }
+    .thanhngangphai2{
+        height: 51px;
+    }
+    .backgroundimg1text1{
+        display: none;
+    }
+    .thanhngang{
+        width: 50px;
+        height: 41px;
+    }
+    .ourprocesscontent2{
+        padding-left: 179px;
+    }
+    .ourprocesscontent22{
+        width: 70px;
+        height: 70px;
+        margin-top: 5px;
+    }
+    .ourprocesscontent1{
+        height: 70px;
+        width: 70px;
+        top: 68px;
+        left: 113px;
+    }
+    .ideas{
+        padding-left: 95px;
+        padding-top: 5px;
+    } 
+    .solution,.touch,.winning{
+        padding-left: 34px;
+        padding-top: 5px;
+    }
+    .backgroundimg1{
+        height: 181px;
+    }
+    .dev-img{
+        margin: 0 auto;
+    }
+    .{
+        width: 725px;
+    }
+    .thanhngangtrai3{
+        height: 53px;
+        margin-left: 20px;
+    }
+    .text1{
+        width: 717px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .barclay{
+        padding-left: 336px;
+    }
+    .ovuong{
+        padding-left: 365px;
+    } 
+    .thanhngangtrai4{
+        margin-left: 30px;
+    }
+    .backgroundimg3{
+        width: 725px;
+    }
+    .backgroundimg3div1{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 581px;
+    }
+    .backgroundimg3{
+        height: 782px;
+        background-image: url(../imgs/background4.jpg);
+    }
+}
+ */
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1170px !important;
+    }
+}

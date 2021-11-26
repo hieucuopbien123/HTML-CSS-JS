@@ -1,0 +1,84 @@
+@font-face {
+    font-family: NewFont;
+    src: url("../font/Raleway-ThinItalic.ttf");
+}
+
+.topmid1 {
+    /* text-align: center; */
+    /* cách này chỉnh đẹp hơn, chỉnh theo body do body ở th này là cha */
+    /* text-align: right; */
+
+    /* margin: auto;
+    width: 70%; */
+    /*bị lệch  vì đó là thẻ block ăn hết chiều ngang ko thể căn giữa đc khi thêm vào thì đc vì fit-content. Cách này
+    thực ra là chỉnh width của content cho thẻ width, sau đó auto làm cho margin đc chia đều trái phải thế là ra giữa.
+    Kp cái gi chỉnh cx đc.*/
+
+    /* margin: 0 auto;
+    width: fit-content;
+    dặt trong thằng con
+    background-color: gray;
+    /*cách đúng nhưng chỉ đc 1 dòng*/
+
+    /* text-align: center;
+    width: 50%; */
+
+    /* Hiểu tất cả rồi: 1 thẻ sẽ có 1 vùng content và 1 vùng margin bao ngoài. Mặc định là content bao hết chiều
+    ngang còn margin bằng 0 hết. Nhưng nếu width vùng content nó k bao kín chiều ngang thì xuất hiện margin. Ta dùng
+    2 cách để căn lề, 1 là cho text-align:center làm cho nội dung ra giữa vùng content với content bao kín mặc định.
+    2 là cho vùng content bao kín nội dung r cho margin đối xứng hai bên.
+    textalign sẽ căn nội dung text bên trong của thẻ div đó ra chính giữa theo chiều ngang
+    align-items: center; sẽ chỉnh các thẻ bên trong thẻ div đó ra giữa thẻ div đó. Như v ta có thể căn chỉnh margin 
+    và content của 1 thẻ, chỉnh đc vị trí của text trong thẻ đó, vị trí của các thẻ con bên trong thẻ đó
+    =>Điều này dẫn tới nhiều cách căn giữa tùy TH. Nhưng ta nên dùng kiểu width theo tỉ lệ hơn vì nó sẽ phù hợp với
+    nhiều loại màn hình và nếu chữ quá dài sẽ tự xuống dòng. Nên lồng thẻ div liên tục với từng bố cục.*/
+
+    /* align-items chỉ dùng cho flexible container mà thôi */
+    align-items: center;
+    /* => cả 3 cách đêu đc nhưng ta nên dùng cách 2 cho nhanh và c3 nếu cần thao tác nâng cao hơn */
+}
+
+
+.top {
+    /* cách thứ 3: flex */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* flex có tác dụng giúp cho item bên trong linh hoạt hơn=> thẻ div có content co lại như span nên dùng 2 div cùng
+    dòng đc, inline làm cho cả cha cũng bị co lại */
+    /* justify content giúp sắp xếp space của flex cha ở vị trí nào kết hợp với display: flex; */
+    /* nếu dùng inline-flex thì cả cha cũng bị co lại và mất hết space nên k dùng justify-content đc nx */
+}
+/* khi dùng flex thì justify content tức là chỉnh content chính nó theo chiều của flex, align là dóng theo chiều ngc lại */
+/* cứ align là chiều ngc lại, align-content chỉ có ích khi có nhiều item thôi  */
+
+.top2 {
+    text-align: center;
+    /* bỏ đi chữ vẫn ra giữa màn hình nhưng nội dung thì... */
+    /* width: 50%; */
+}
+
+.duongkedoc {
+    border-right: 1px solid;
+    border-right-color: black;
+    padding-right: 15px;
+    height: 50px;
+    margin-left: 10px;
+    float: right;
+    /* float làm cho cái thẻ block hiện tại hiển thị ở vị trí nào như ý ta, chỉ có left, right*/
+}
+
+.chinh {
+    width: 100px;
+    text-align: center;
+}
+
+.chinh2 {
+    text-align: center;
+}
+
+.test {
+    text-align: center;
+    width: 10px;
+    font-family: NewFont;
+}

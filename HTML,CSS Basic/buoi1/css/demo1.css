@@ -1,0 +1,15 @@
+.text-green {
+    color: green !important;
+}
+
+#text-violet {
+    padding: 50px;
+    color: violet;
+}
+
+.text-red {
+    color: red;
+}
+
+/* khi trùng thuộc tính bên trong->ưu tiên cái sau cùng bậc; bậc id>class; !important là qtr nhất; */
+/* khi hai cái css element cùng bậc là class chẳng hạn thì dấu . quan trọng hơn #-> bỏ hẳn # chứ k lọc trùng */
