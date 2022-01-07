@@ -1,6 +1,6 @@
 #text-red{
     color: red !important;
-}/* dùng css với class k đc dùng #, trc hiểu sai */
+}/* dùng css với class k đc dùng #, trc hiểu sai, # dùng cho id thôi */
 
 /* thẻ ul bản thân nó đã là 1 thẻ block, ta muốn border nhỏ lại phải chỉnh width cho nó thì margin vẫn chiếm full
 nếu muốn đè thẻ khác sang phải nó thì phải biến nó thành 1 thẻ inline với display: inline-flex; */

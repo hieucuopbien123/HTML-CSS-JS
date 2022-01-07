@@ -1,6 +1,6 @@
 ﻿Phím tắt VSC:
-SHIFT+ALT+F/CTRL+F  F1->search
-CTRL+SHIFT+X->extension   ALT+SHIFT+A
+SHIFT+ALT+F  F1->search
+CTRL+SHIFT+X->extension   ALT+SHIFT+A=> comment từ đoạn sau trở đi
 CTRL+SHIFT+E->editor
 ALT+L+ALT+O	CTRL+SHIFT+F
 CTRL+, ->mở setting

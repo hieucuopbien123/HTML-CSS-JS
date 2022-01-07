@@ -12,7 +12,9 @@
     height: 500px;
 }
 
-/* chú ý dùng width:fit-content kết hợp với flex thì vô dụng. Lệnh width:fit-content sẽ khiến cho phần content
+/* chú ý dùng width:fit-content kết hợp với flex thì vô dụng. Vi mục đích khi sử dụng flex ta phải hiểu là kích thước
+của thẻ cha lớn hơn các thẻ con và dùng flex để bảo là các con sẽ xếp bên trong cha theo vị trí như nào bù vào chỗ trống
+thừa kích thước đó. Lệnh width:fit-content sẽ khiến cho phần content
 của thẻ block bị co lại thành nội dung. Điều này làm flex vô dụng. Vì khi dùng flex thì thẻ cha có content
 chiếm toàn bộ, phần k hiển thị là space sẽ có dấu gạch chéo. Và thực chất ta sắp xếp con trong cha dựa vào
 việc thay đổi cái space đó mà thôi. Đó là width fit content với flex-direction là row chứ column vẫn ok

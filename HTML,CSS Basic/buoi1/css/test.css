@@ -66,6 +66,8 @@
     margin-left: 10px;
     float: right;
     /* float làm cho cái thẻ block hiện tại hiển thị ở vị trí nào như ý ta, chỉ có left, right*/
+    /* phải hiểu là nó căn cả cục ra phía nào=> k có tác dụng với 1 thẻ div bình thường vì chiếm full kích thước
+    thì sang trái hay phải chả như nhau */
 }
 
 .chinh {

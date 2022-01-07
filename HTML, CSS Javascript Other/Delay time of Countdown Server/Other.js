@@ -1,6 +1,7 @@
-console.log('fasfasfsfasfasdf');
-console.log(localStorage)
-
+console.clear();//clear k chỉ hiện thị mà clear cả tính chất như count, group
+console.groupCollapsed("chỉ là tự động collapse");
+console.debug("debug hiện chữ màu xanh");
+console.groupEnd();
 //master mọi thể loại console => ng ta thg dùng nó để tạo ra các logger
 console.log("Object value: %o with string substitution", {
     string: "str",
@@ -15,7 +16,7 @@ console.log("Example %cCSS-styled%c %clog!",
 //Khi dùng %c thì các giá trị hiển thị phía sau %c sẽ mang code css ta mong muốn cho đến khi gặp 1 %c tiếp theo
 //Nếu ta k muốn dùng css nx thì đặt %c tiếp theo là rỗng là đc
 
-console.group();
+console.group("group 1");
 console.log("Inside 1st group");
 console.group();
 console.log("Inside 2nd group");

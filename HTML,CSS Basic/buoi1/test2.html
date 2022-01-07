@@ -44,6 +44,10 @@
             padding-left: 10px;
             /* dùng padding chứ kp margin */
         }
+        /* cái này float left nó gặp 1 thg float left bên trái thì né ra và k tính. Nếu k có float left thì nó tính kích 
+        thước cả cái thẻ float left bên trái nó. Nhưng dù tính cả kích thươc nhưng nó k hiển thị đè lên float left mà né 
+        ra, ta có thể thấy border left bị dính vào bên trái của cái bên trái vì nó tính phần content chứa cả cái float 
+        left, chỉ là k hiện thôi */
 
         #bottom {
             height: 50px;
@@ -64,7 +68,7 @@
             <div id="left">
                 <p>TT - Để mở cánh cửa thép dày cộp dẫn vào tầng hầm chi nhánh ngân hàng Sociestes tại thành phố
                     Nice(Pháp), hai chiếc chìa khóa phải được tra vào hai ổ khóa đặt ở những vị trí khác nhau. Sicieste
-                    đã rất tự hào về ...</p>
+                    đã rất tự hào về cái gì đó ....</p>
                 <!-- lồng thẻ liên tục, buộc có flex ở cha or float ở con để div k chiếm hết k gian -->
             </div>
             <div id="right">

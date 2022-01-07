@@ -83,6 +83,9 @@ còn nếu căn giữa thì thêm align items center, thuộc tính khác thì t
     /* align-content: stretch; là để phần thừa ở cuối */
     /* justify content là sắp xếp các div con trong 1 cái div lớn theo chiều của flex, align-content và 
     align-items là sắp xếp theo chiều ngược lại(text-align cx v) */
+
+    /* TK: margin 0 auto + width fit content; text-align center/justity; text-jusitify; align-items; align-content; 
+    justify-content; */
 }
 
 .tenanh {

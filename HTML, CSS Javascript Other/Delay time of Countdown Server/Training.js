@@ -1,17 +1,29 @@
-console.log("%c%s%c World!","color: red;font-weight:bold;font-size:24px","Hello","")
-console.log("%o Trang",{
-    name:"Trang", 
-    age: 10
-})
-console.trace("Para of trace");
-console.time("Hello")
-console.timeEnd("Hello")
-console.group("Hello group")
-console.count("count")
+console.log("This is an %cobject %o%c, %cok?",
+    "color: yellow; font-size: 25px",
+    {
+        Name: "Hieu",
+        Age: 18
+    },
+    "",
+    "color: black"
+)
+console.trace("This is line 10")
+console.info("This is console.info")
+console.warn("cẩn thận")
+console.error("lỗi")
+console.table([[1,2],[1,2,3]])
+console.debug("Hello")
+console.clear();
+console.group();
+console.assert(false, "assert false");
+console.group();
+console.time();
+console.timeLog();
+console.groupEnd();
+console.groupEnd();
+console.timeEnd();
+console.count();
+console.count();
+console.count("Another count");
 console.countReset();
-console.groupEnd()
-console.count("count")
-console.error("Hello error")
-console.info("Info")
-console.table([1,2,4,5,[1,2,3]])
-console.assert(1+1!=2,"1+1!=2")
+console.count();

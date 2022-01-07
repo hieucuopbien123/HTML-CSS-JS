@@ -36,7 +36,7 @@
 .li1{
     position: relative;
     width: fit-content;
-    white-space: nowrap;
+    white-space: nowrap;/* kích thước có nhỏ hơn đi chăng nx cx k xuống dòng */
 }
 
 .li2{
@@ -108,6 +108,6 @@ sao cho nó cùng 1 dòng nên dùng thêm white-space: nowrap; */
     }
 }
 
-.hoverTest:hover .hoverTest2{
+.hoverTest:hover{
     background-color: red;
 }

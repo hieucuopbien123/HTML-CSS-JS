@@ -13,8 +13,8 @@
         th,
         td {
             border: 1px solid red;
-            /* có thể gộp với border: chung như trên or tách với border-width: ; border-color:  */
-            border-collapse: collapse;
+            /*có thể gộp với border:chung như trên or tách với border-width,border-style,border-color*/
+            border-collapse: collapse;/* gộp nếu chung cạnh */
         }
     </style>
 </head>
@@ -97,9 +97,53 @@
 
     <button class="text-green text-red">hello1</button>
     <button class="text-green text-violet">hello2</button>
+    <!-- nó bỏ luôn text-violet chứ kp là lọc lấy trùng nch là kbh dùng #-->
     <button class="text-red text-yellow">hello4</button>
     <button id="text-violet" class="text-red">hello3</button>
 
+
+    <!-- margin 0 auto + width: fit-content -->
+    <div style="margin: 0 auto; width: fit-content;">Hello</div>
+
+    <!-- text-align: center -->
+    <div style="text-align:center; width: 50%;">Hello</div>
+
+    <!-- text-align: justify => ta kqt đến text-justify nhé, nó vô dụng k cần học-->
+    <div style="text-align: justify; text-justify: inter-word; width: 50%;">Lorem ipsum dolor sit amet consectetur 
+        adipisicing elit. Earum laborum dolorum cum placeat non ipsum? Cum vero numquam distinctio consectetur nihil 
+        omnis officiis laborum ipsa. Provident omnis optio pariatur voluptatem. Bo lại thành hình chữ nhật đẹp.</div>
+
+    <!-- 2 ông align chỉnh ngược chiều. khi chiều còn lại kích thước vượt quá -->
+    <!-- align-items: chỉnh ngược chiều -->
+    <div style="width: 1000px; height: 500px; background-color: gray;
+    display: flex; flex-direction: row; flex-wrap: wrap; align-items: center">
+        <div style="width: 100px; height: 50px; background-color: red;"></div>
+        <div style="width: 500px; height: 50px; background-color: green;"></div>
+        <div style="width: 100px; height: 50px; background-color: yellow;"></div>
+        <div style="width: 500px; height: 50px; background-color: cyan;"></div>
+        <div style="width: 100px; height: 50px; background-color: blue;"></div>
+    </div>
+
+    <!-- align-content: chỉnh ngược chiều -->
+    <div style="width: 1000px; height: 500px; background-color: white;
+    display: flex; flex-direction: row; flex-wrap: wrap; align-content: center">
+        <div style="width: 100px; height: 50px; background-color: red;"></div>
+        <div style="width: 500px; height: 50px; background-color: green;"></div>
+        <div style="width: 100px; height: 50px; background-color: yellow;"></div>
+        <div style="width: 500px; height: 50px; background-color: cyan;"></div>
+        <div style="width: 100px; height: 50px; background-color: blue;"></div>
+    </div>
+
+    <!-- justify-content: đúng chiều flex -->
+    <div style="width: 1000px; height: 500px; background-color: gray;
+    display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center">
+        <div style="width: 100px; height: 50px; background-color: red;"></div>
+        <div style="width: 500px; height: 50px; background-color: green;"></div>
+        <div style="width: 100px; height: 50px; background-color: yellow;"></div>
+        <div style="width: 500px; height: 50px; background-color: cyan;"></div>
+        <div style="width: 100px; height: 50px; background-color: blue;"></div>
+    </div>
+    
 </body>
 
 </html>

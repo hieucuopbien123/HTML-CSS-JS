@@ -15,6 +15,7 @@
     height: 70px;
     width: 70px;
     line-height: 70px;
+    /* line-height là kích thước 1 dòng, chữ sẽ hiện ra giữa 1 line height */
 }
 
 .box div:nth-child(2) {
