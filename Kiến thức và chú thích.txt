@@ -68,7 +68,7 @@ Bao gồm giao diện người dùng(các thứ hiển thị trên màn hình)->
 Các trình duyệt khác nhau sử dụng rendering engine khác nhau như: Webkit dùng cho Safari, Gecko dùng trong firefox, blink dùng trong chrome, opera,..
 V tại sao lại cần dùng đến các engine khác nhau, bởi vì mỗi thứ có 1 điểm lợi khác nhau, vd 1 cái giải quyết cái gì k tốt thì họ có thể tạo ra 1 engine mới tốt hơn chẳng hạn. Tuy nhiên cho đến h, khả năng xuất hiện 1 engine mới là cực thấp trừ khi có 1 bước tiến mới đáng kể. 
 
-Chromium là 1 trình duyệt mã nguồn mở. Các trình duyệt như chromium cũng sử dụng mã nguồn của chromium để tạo nên đó tuy nhiên nhiều người biết đến chrome chứ k bt đến chromium, chromium bị hạn chế hơn so với chrome. Nên dùng Chromium nếu sử dụng hđh mã nguồn mở. Tức là người ta dùng mã nguồn mở của Chromium để phát triển nên các trình duyệt khác.
+Chromium là 1 trình duyệt mã nguồn mở. Các trình duyệt như chrome cũng sử dụng mã nguồn của chromium để tạo nên đó tuy nhiên nhiều người biết đến chrome chứ k bt đến chromium, chromium bị hạn chế hơn so với chrome. Nên dùng Chromium nếu sử dụng hđh mã nguồn mở. Tức là người ta dùng mã nguồn mở của Chromium để phát triển nên các trình duyệt khác.
 
 VSC hỗ trợ emmet 2.0 tự có trong VSC r k cần tải nx. Đó là lý do gõ ! là ra sẵn trang trống r, đó là code emmet do VSC có sẵn
 emmet là công cụ tạo code html và css ngắn gọn, gõ html tốc độ cao
@@ -87,7 +87,7 @@ Tab Element: HTML, CSS, animation, DOM,..
 Tab Console: Javascript
 Tab Source: xem tất cả các file dùng để tạo trang web và thao tác với chúng
 Tab Network: các dữ liệu đi và về
-Tab Security: chứng chỉ HTTPS và rạng thái thái TLS của trang web
+Tab Security: chứng chỉ HTTPS và trạng thái thái TLS của trang web
 Tab Lighthouse: báo cáo chức năng và cấu trúc của trang web để developer có thể cải thiện hiệu suất, tối ưu seo=> chọn thiết bị + generate report
 
 Giúp crawl, chỉnh css, tạo responsive app với device mode, xoay ngang màn hình device..
@@ -114,7 +114,6 @@ js là danh sách các file js được inject vào trang web nên file js luôn
 matches xác định trang web muốn thêm nội dung vào=> dùng regexp: "*://*/*" sẽ dùng với mọi trang web(tức trang web nào cx có conten-script này)
 
 background script bắt đầu thực hiện khi ta ấn vào biểu tượng extension, content script tự thực hiện khi ta load 1 trang web mới
-
 
 
 

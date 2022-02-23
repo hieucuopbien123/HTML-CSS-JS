@@ -138,7 +138,7 @@ if (window.cookieEnabled){
 //dễ thôi
 console.log(document.cookie);
 
-function MustUseNew(){
+function MustUseNew(){//khi có this
     this.nameTest = "Hi";
 }
 var testNew = MustUseNew();
@@ -153,7 +153,7 @@ function* yieldChild(){
 }
 function* testYield(a){
     yield [1,2];
-    yield* [1,2];//khác biệt
+    yield* [1,2];//khác biệt vì yield từng phần tử còn trên là yield cả arr
     yield* "ab";
 
     yield yieldChild();//éo lấy đc
@@ -240,7 +240,7 @@ var tempC1 = new class1Var();
 //Đặc biệt là nếu dùng class class1 thì có thể var tempC1 = new class1(); ok luôn nhưng nếu dùng gán class đó cho 1 
 //biến thì lúc đó cái kia k được coi là định nghĩa 1 class nên dùng giống như v là sai mà phải là:
 //var tempC1 = new class1Var();=> tức là cái class kia kp định nghĩa global nên có thể bỏ tên class cx đc là
-//var class1Var = class {}; var tempC1 = new class1Var;
+//var class1Var = class {}; var tempC1 = new class1Var; 
 
 class staticClass{
     static staticVar = "181";

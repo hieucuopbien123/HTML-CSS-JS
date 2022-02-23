@@ -2,6 +2,7 @@ var buttonConfirm = document.createElement("button")
 buttonConfirm.innerText = "Confirm Dialog"
 // document.body.appendChild(buttonConfirm);//or append
 document.body.insertBefore(buttonConfirm,document.body.childNodes[0])//luôn thêm vào đầu
+//Đây là cách thêm vào đầu trong js chứ trong html thì phải chỉnh position
 buttonConfirm.addEventListener("click",() => {
     var boolConfirm = confirm("Are you ok?")
     if(boolConfirm)
@@ -129,7 +130,6 @@ console.log(x + " " + y + " " + z);
 
 var {a,b,...i} = obj1;
 console.log(a + " " + b + " " + i)//k bằng cách trên vì tên biến cách trên linh động hơn
-//
 
 function func1(a,...b){
     console.log(a);
@@ -148,7 +148,7 @@ var obj = {
     [prop1]: "abc",
     [prop2]: "123",
     [prop3]: 456
-}
+}//với cách này ta có thể biến trường key của object là bất cứ cái gì
 console.log(obj.ABC + " " + obj[prop2] + " " + obj[prop3]);
 //chú ý string thì chấm được chứ k đc dùng obj.123
 
@@ -172,6 +172,7 @@ var test10 = {
     title: "Hello"
 }
 console.log(test10["title"])//dùng như này tương đương với test10.title, k đc dùng test10[title]
+//tức là .key bằng với ["key"]
 
 function getValue(){
     var x,y,z;
@@ -234,7 +235,7 @@ func("Hello from short arrow");
 
 function testDyImport(){
     import("./dynamicImport.js").then(importVar=>{
-        importVar.default();
+        importVar.default();//để lấy default
         importVar.hello("test dynamic import")
     })
 }
@@ -243,7 +244,7 @@ console.log("Test".localeCompare("test"));
 console.log([..."Hello"]);
 
 console.log(new String("Test") instanceof String)
-//"Test" thì k là 1 instanceof String nhưng new String("Test") thì có
+//"Test" thì k là 1 instanceof String mà phải cast sang ms đc, nhưng new String("Test") thì có
 
 class Parent{
     constructor(){
@@ -269,4 +270,3 @@ class Child extends Parent{
 }
 var child = new Child();
 child.inChild();
-

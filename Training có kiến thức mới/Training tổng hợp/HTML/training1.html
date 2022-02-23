@@ -42,6 +42,7 @@
     <ul id="list"></ul>
     <div style="border: 1px; background-color: red; height: 250px; width: 500px;" 
     onmouseover="eventMouseOver(event)" id="div"></div>
+    <!-- <script type="text/javascript" src="../JS/training1.js"></script> -->
     <script type="text/javascript" src="../JS/training2.js"></script>
 
     <a href="javascript: void(0);">Useless link</a>
@@ -73,7 +74,7 @@
         }
         user.name_age = "Trang 21";
         console.log("User: ", user.name, user.age);
-        Object.defineProperty(user, 'job', {
+        Object.defineProperty(user, 'job', {//éo dùng như này mà nên dùng như dưới
             value: 'IT',
             writable: true,
             configurable: true

@@ -1,4 +1,4 @@
-console.log("STAGE 1")
+console.log("STAGE 1");
 
 var desAssignmentArr = [1,2,3];
 var [a,,b,c,d=10] = desAssignmentArr;
@@ -52,7 +52,6 @@ if(varMap.has("Name"))
     varMap.delete("Name");
 console.log("Size of map: ", varMap.size);
 
-//!
 console.log("STAGE 2");
 
 for(var i of varMap.keys()){
@@ -272,7 +271,7 @@ console.log("Value of input: ", document.forms[0].Name.value);
 document.forms[0].Name.focus();
 //chú ý 1 trang web chỉ focus đc vào 1 thứ-> Ở th này nó focus vào input trong iframe nhé vì nó load sau nên lấy sau
 
-document.getElementsByTagName('a')[0].onclick = () => {//gọi và thực hiện sự kiện trong js
+document.getElementsByTagName('a')[0].onclick = () => {//gọi và thực hiện sự kiện trong js. giống addEventListener
     console.log("Link is clicked");
     return false;
 };

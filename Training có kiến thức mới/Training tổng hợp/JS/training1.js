@@ -34,7 +34,7 @@ console.log("var5 match /G/gim:", var5.match(/G/gim));
 console.log("var5 matchAll /G/gim:", [...var5.matchAll(/G/gim)]);
 //hàm matchAll trả ra 1 RegExpStringIterator, ta phải convert nó sang 1 array, cách convert cx dị nx
 console.log(var5.replace(/s/gm, "S"));
-//cái này éo thay đổi trực tiếp str đâu nhé mà trả ra 1 string khác đẫ replace
+//cái này éo thay đổi trực tiếp str đâu nhé mà trả ra 1 string khác đã replace
 
 function Book(title, author){
     this.title = title;
@@ -284,7 +284,6 @@ console.log("User agent: ", navigator.userAgent);
 console.log("Product: ", navigator.product);
 console.log("Java enabled: ", navigator.javaEnabled);
 
-//!
 console.log("STAGE FIVE");
 
 for(var i = 0; i < navigator.mimeTypes.length; i++){
